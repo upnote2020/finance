@@ -16,7 +16,7 @@ import time
 import schedule
 
 import FinanceDataReader as fdr
-# import yfinance as yf
+import yfinance as yf
 
 import requests
 import asyncio
@@ -63,7 +63,6 @@ class MarketDataCollector:
         self.config = Config(config_path)
         self.setup_logging()
         self.setup_timezone()
-        # self.setup_database()
         self.setup_database_connection()
 
 
@@ -136,45 +135,6 @@ class MarketDataCollector:
         self.logger.info("Database tables created or verified.")
 
 
-    # DB 기본 세팅
-    # def setup_database(self) -> None:
-    #     database_url = self.get_database_url()
-    #     self.engine = create_engine(database_url, poolclass=QueuePool, pool_size=5, max_overflow=10)
-    #     self.metadata = MetaData()
-
-    #     # S&P 500 리스트를 위한 테이블 정의
-    #     self.snp500_table = Table('snp500_list', self.metadata,
-    #         Column('id', Integer, primary_key=True),
-    #         Column('symbol', String, unique=True),
-    #         Column('name', String),
-    #         Column('sector', String),
-    #         Column('industry', String)
-    #     )
-
-    #     # 주식 데이터를 위한 테이블 정의
-    #     self.stock_data_table = Table('stock_data', self.metadata,
-    #         Column('id', Integer, primary_key=True),
-    #         Column('date', Date),
-    #         Column('symbol', String),
-    #         Column('name', String),
-    #         Column('sector', String),
-    #         Column('industry', String),
-    #         Column('open', Float),
-    #         Column('high', Float),
-    #         Column('low', Float),
-    #         Column('close', Float),
-    #         Column('volume', Integer),
-    #         Column('adj_close', Float),
-    #         Column('change', Float),
-    #         Column('adj_change', Float),
-    #         Column('adj_amount', Float)
-    #     )
-
-    #     # DB 생성
-    #     self.metadata.create_all(self.engine)
-    #     self.Session = sessionmaker(bind=self.engine)
-
-
     # 날짜 취득
     def get_current_date(self) -> datetime:
         if self.config.test_date:
@@ -202,21 +162,24 @@ class MarketDataCollector:
     @retry(stop_max_attempt_number=3, wait_fixed=2000)
     def fetch_snp500_list(self) -> pd.DataFrame:
         try:
-            return fdr.StockListing('S&P500')
+            df = fdr.StockListing('S&P500')
+            cols_ren = {'Symbol':'symbol', 'Name':'name', 'Sector':'sector', 'Industry':'industry'}
+            df = df.rename(cols_ren)
+            return df
         except Exception as e:
             self.logger.warning(f"Failed to fetch S&P 500 list from FinanceDataReader: {e}")
             url = 'https://en.wikipedia.org/wiki/List_of_S&P_500_companies'
             df = pd.read_html(url, header=0)[0]
             cols_ren = {'Security':'name', 'Ticker symbol':'symbol', 'GICS Sector':'sector', 'GICS Sub-Industry':'industry'}
             df = df.rename(columns=cols_ren)
-            df = df[['symbol', 'name', 'sector', 'industry']]
-            df['symbol'] = df['symbol'].str.replace('.', '', regex=False)
             return df
 
 
     # S&P 500 리스트 업데이트
     def update_snp500_list(self) -> None:
         df_SnP_list = self.fetch_snp500_list()
+        df_SnP_list = df_SnP_list[['symbol', 'name', 'sector', 'industry']]
+        df_SnP_list['symbol'] = df_SnP_list['symbol'].str.replace('.', '', regex=False)
 
         if len(df_SnP_list) != 503:
             self.logger.error(f"Unexpected number of companies in S&P 500 list: {len(df_SnP_list)}")
@@ -228,6 +191,10 @@ class MarketDataCollector:
         session = self.Session()
         try:
             session.execute(self.snp500_table.delete())
+            # 1안
+            # records = df_SnP_list[['symbol', 'name', 'sector', 'industry']].to_dict(orient='records')
+            # session.bulk_insert_mappings(self.snp500_table, records)
+            # 2안
             for _, row in df_SnP_list.iterrows():
                 session.execute(self.snp500_table.insert().values(
                     symbol=row['symbol'],
@@ -235,6 +202,7 @@ class MarketDataCollector:
                     sector=row['sector'],
                     industry=row['industry']
                 ))
+
             session.commit()
             self.logger.info("S&P 500 list updated successfully")
         except SQLAlchemyError as e:
@@ -282,10 +250,10 @@ class MarketDataCollector:
             index = pd.to_datetime(jo['chart']['result'][0]['timestamp'], unit='s').normalize()
             values = {**jo['chart']['result'][0]['indicators']['quote'][0], **jo['chart']['result'][0]['indicators']['adjclose'][0]}
 
-            col_map = {'index':'date', 'adjclose':'adj_close'}
+            col_map = {'index':'date', 'open':'open', 'high':'high', 'low':'low', 'close':'close', 'volume':'volume', 'adjclose':'adj_close'}
             tp = pd.DataFrame(data=values, index=index)
             tp = tp.reset_index().rename(columns=col_map)
-            tp = tp[col_map.values()].reset_index()
+            tp = tp[col_map.values()]
             tp['date'] = tp['date'].astype(str)
 
             return symbol, tp
@@ -309,6 +277,16 @@ class MarketDataCollector:
         row_symbol = result.fetchone()
 
         try:
+            # 1안
+            # data['name'] = row_symbol['name']
+            # data['sector'] = row_symbol['sector']
+            # data['industry'] = row_symbol['industry']
+            # change=(row['close'] - row['open']) / row['open'] # 반영되게 수정 필요
+            # adj_change=(row['adj_close'] - row['open']) / row['open'] # 반영되게 수정 필요
+            # adj_amount=row['adj_close'] * row['volume'] # 반영되게 수정 필요
+            # records = data.to_dict(orient='records')
+            # session.bulk_insert_mappings(self.stock_data_table, records)
+            # 2안
             for index, row in data.iterrows():
                 session.execute(self.stock_data_table.insert().values(
                     date=index.date(),
@@ -326,6 +304,7 @@ class MarketDataCollector:
                     adj_change=(row['adj_close'] - row['open']) / row['open'],
                     adj_amount=row['adj_close'] * row['volume']
                 ))
+
             session.commit()
             self.logger.info(f"Stock data saved for {symbol}")
         except SQLAlchemyError as e:
@@ -355,20 +334,23 @@ class MarketDataCollector:
 
     def collect_news(self):
         self.logger.info("Collecting news")
+        symbol = 'AAPL'
+        ticker = yf.Ticker(symbol)
+        news = ticker.news
         # 뉴스 수집 로직 구현
 
 
-    def analyze_stock(self):
+    def analyze_stock(self) -> List[str]:
         self.logger.info("Analyzing stock")
         # 주식 분석 로직 구현
 
 
     # Make.com으로 트리거 보내기
     @retry(stop_max_attempt_number=3, wait_fixed=2000)
-    def send_signal_to_make(self) -> None:
+    def send_signal_to_make(self, stock_list : List[str]) -> None:
         try:
             webhook_url = self.config['webhook_url_his']
-            data = {"stock_list": ['dummy']}  # TO-DO: 실제 데이터로 교체 필요
+            data = {"stock_list": ['dummy']}  # TODO: 실제 데이터로 교체 필요, stock_list
             response = requests.post(webhook_url, json=data, timeout=10)
             response.raise_for_status()
             self.logger.info("Signal sent to Make.com successfully")
@@ -390,8 +372,8 @@ class MarketDataCollector:
             elif status == "AFTER_OPEN":
                 # self.collect_news()
                 await self.collect_stock_prices_async()
-                # self.analyze_stock()
-                # self.send_signal_to_make()
+                # stock_list = self.analyze_stock()
+                # self.send_signal_to_make(stock_list)
         except Exception as e:
             self.logger.error(f"An error occurred during job execution: {e}")
 
