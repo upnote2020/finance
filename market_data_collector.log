@@ -1,0 +1,204 @@
+2024-09-23 23:18:30,769 - INFO - Database tables created or verified.
+2024-09-23 23:18:30,769 - INFO - Starting market data collector
+2024-09-23 23:18:30,770 - INFO - Jobs scheduled at 22:00 and 05:30
+2024-09-23 23:19:53,530 - INFO - Shutting down market data collector
+2024-09-23 23:19:56,246 - INFO - Database tables created or verified.
+2024-09-23 23:19:56,246 - INFO - Starting market data collector
+2024-09-23 23:19:56,247 - INFO - Jobs scheduled at 23:20 and 05:30
+2024-09-23 23:20:00,530 - INFO - Market status: OPEN
+2024-09-23 23:20:43,773 - INFO - Shutting down market data collector
+2024-09-23 23:20:46,330 - INFO - Database tables created or verified.
+2024-09-23 23:20:46,331 - INFO - Starting market data collector
+2024-09-23 23:20:46,339 - INFO - Jobs scheduled at 23:20 and 05:30
+2024-09-23 23:20:49,575 - INFO - Shutting down market data collector
+2024-09-23 23:20:56,199 - INFO - Database tables created or verified.
+2024-09-23 23:20:56,199 - INFO - Starting market data collector
+2024-09-23 23:20:56,200 - INFO - Jobs scheduled at 23:21 and 05:30
+2024-09-23 23:21:00,286 - INFO - Market status: OPEN
+2024-09-23 23:21:01,914 - ERROR - An error occurred during job execution: "None of [Index(['symbol', 'name', 'sector', 'industry'], dtype='object')] are in the [columns]"
+2024-09-23 23:22:14,745 - INFO - Shutting down market data collector
+2024-09-23 23:22:24,249 - INFO - Database tables created or verified.
+2024-09-23 23:22:24,250 - INFO - Starting market data collector
+2024-09-23 23:22:24,251 - INFO - Jobs scheduled at 23:23 and 05:30
+2024-09-23 23:23:00,351 - INFO - Market status: OPEN
+2024-09-23 23:23:01,470 - ERROR - An error occurred during job execution: "None of [Index(['symbol', 'name', 'sector', 'industry'], dtype='object')] are in the [columns]"
+2024-09-23 23:23:43,514 - INFO - Shutting down market data collector
+2024-09-23 23:23:50,760 - INFO - Database tables created or verified.
+2024-09-23 23:23:50,760 - INFO - Starting market data collector
+2024-09-23 23:23:50,761 - INFO - Jobs scheduled at 23:24 and 05:30
+2024-09-23 23:24:00,846 - INFO - Market status: OPEN
+2024-09-23 23:24:02,120 - ERROR - An error occurred during job execution: 'Symbol'
+2024-09-23 23:24:40,537 - INFO - Shutting down market data collector
+2024-09-23 23:24:47,779 - INFO - Database tables created or verified.
+2024-09-23 23:24:47,780 - INFO - Starting market data collector
+2024-09-23 23:24:47,781 - INFO - Jobs scheduled at 23:25 and 05:30
+2024-09-23 23:25:00,871 - INFO - Market status: OPEN
+2024-09-23 23:25:02,117 - INFO - S&P 500 list updated successfully
+2024-09-23 23:25:36,484 - INFO - Shutting down market data collector
+2024-09-23 23:25:42,648 - INFO - Database tables created or verified.
+2024-09-23 23:25:42,649 - INFO - Starting market data collector
+2024-09-23 23:25:42,650 - INFO - Jobs scheduled at 23:26 and 05:30
+2024-09-23 23:26:00,739 - INFO - Market status: OPEN
+2024-09-23 23:26:00,739 - INFO - Collecting stock prices
+2024-09-23 23:26:00,743 - ERROR - An error occurred during job execution: tuple indices must be integers or slices, not str
+2024-09-23 23:27:02,263 - INFO - Shutting down market data collector
+2024-09-23 23:27:05,016 - INFO - Database tables created or verified.
+2024-09-23 23:27:05,017 - INFO - Starting market data collector
+2024-09-23 23:27:05,018 - INFO - Jobs scheduled at 23:26 and 05:30
+2024-09-23 23:27:06,563 - INFO - Shutting down market data collector
+2024-09-23 23:27:24,669 - INFO - Database tables created or verified.
+2024-09-23 23:27:24,669 - INFO - Starting market data collector
+2024-09-23 23:27:24,670 - INFO - Jobs scheduled at 23:28 and 23:30
+2024-09-23 23:28:00,782 - INFO - Market status: OPEN
+2024-09-23 23:28:00,783 - INFO - Collecting stock prices
+2024-09-23 23:28:00,786 - ERROR - An error occurred during job execution: tuple indices must be integers or slices, not str
+2024-09-23 23:28:56,688 - INFO - Shutting down market data collector
+2024-09-23 23:29:01,670 - INFO - Database tables created or verified.
+2024-09-23 23:29:01,670 - INFO - Starting market data collector
+2024-09-23 23:29:01,671 - INFO - Jobs scheduled at 23:29 and 23:30
+2024-09-23 23:29:06,342 - INFO - Shutting down market data collector
+2024-09-23 23:29:13,335 - INFO - Database tables created or verified.
+2024-09-23 23:29:13,335 - INFO - Starting market data collector
+2024-09-23 23:29:13,336 - INFO - Jobs scheduled at 23:30 and 23:30
+2024-09-23 23:30:00,437 - INFO - Market status: OPEN
+2024-09-23 23:30:00,437 - INFO - Collecting stock prices
+2024-09-23 23:30:00,440 - ERROR - An error occurred during job execution: tuple indices must be integers or slices, not str
+2024-09-23 23:30:01,213 - INFO - Market status: OPEN
+2024-09-23 23:30:01,213 - INFO - Collecting stock prices
+2024-09-23 23:30:01,215 - ERROR - An error occurred during job execution: tuple indices must be integers or slices, not str
+2024-09-23 23:30:33,404 - INFO - Shutting down market data collector
+2024-09-23 23:30:36,070 - INFO - Database tables created or verified.
+2024-09-23 23:30:36,070 - INFO - Starting market data collector
+2024-09-23 23:30:36,071 - INFO - Jobs scheduled at 23:31 and 05:30
+2024-09-23 23:31:00,167 - INFO - Market status: OPEN
+2024-09-23 23:31:00,167 - INFO - Collecting stock prices
+2024-09-23 23:31:00,171 - ERROR - An error occurred during job execution: tuple indices must be integers or slices, not str
+2024-09-23 23:31:48,897 - INFO - Shutting down market data collector
+2024-09-23 23:31:54,349 - INFO - Database tables created or verified.
+2024-09-23 23:31:54,349 - INFO - Starting market data collector
+2024-09-23 23:31:54,350 - INFO - Jobs scheduled at 23:32 and 05:30
+2024-09-23 23:32:00,445 - INFO - Market status: OPEN
+2024-09-23 23:32:00,445 - INFO - Collecting stock prices
+2024-09-23 23:32:00,450 - ERROR - An error occurred during job execution: tuple indices must be integers or slices, not str
+2024-09-23 23:32:27,340 - INFO - Shutting down market data collector
+2024-09-23 23:32:29,800 - INFO - Database tables created or verified.
+2024-09-23 23:32:29,801 - INFO - Starting market data collector
+2024-09-23 23:32:29,802 - INFO - Jobs scheduled at 23:33 and 05:30
+2024-09-23 23:33:00,900 - INFO - Market status: OPEN
+2024-09-23 23:33:00,901 - INFO - Collecting stock prices
+2024-09-23 23:34:09,018 - INFO - Shutting down market data collector
+2024-09-23 23:34:11,562 - INFO - Database tables created or verified.
+2024-09-23 23:34:11,562 - INFO - Starting market data collector
+2024-09-23 23:34:11,563 - INFO - Jobs scheduled at 23:35 and 05:30
+2024-09-23 23:35:00,670 - INFO - Market status: OPEN
+2024-09-23 23:35:00,670 - INFO - Collecting stock prices
+2024-09-23 23:35:00,673 - ERROR - An error occurred during job execution: tuple indices must be integers or slices, not str
+2024-09-23 23:41:11,381 - INFO - Shutting down market data collector
+2024-09-23 23:41:13,876 - INFO - Database tables created or verified.
+2024-09-23 23:41:13,876 - INFO - Starting market data collector
+2024-09-23 23:41:13,877 - INFO - Jobs scheduled at 23:42 and 05:30
+2024-09-23 23:42:00,981 - INFO - Market status: OPEN
+2024-09-23 23:42:00,981 - INFO - Collecting stock prices
+2024-09-23 23:44:54,193 - INFO - Shutting down market data collector
+2024-09-23 23:44:56,791 - INFO - Database tables created or verified.
+2024-09-23 23:44:56,792 - INFO - Starting market data collector
+2024-09-23 23:44:56,793 - INFO - Jobs scheduled at 23:00 and 06:30
+2024-09-23 23:45:32,700 - INFO - Shutting down market data collector
+2024-09-23 23:45:35,308 - INFO - Database tables created or verified.
+2024-09-23 23:45:35,308 - INFO - Starting market data collector
+2024-09-23 23:45:35,310 - INFO - Jobs scheduled at 23:00 and 06:30
+2024-09-23 23:59:24,613 - INFO - Shutting down market data collector
+2024-09-23 23:59:27,019 - INFO - Database tables created or verified.
+2024-09-23 23:59:27,019 - INFO - Starting market data collector
+2024-09-23 23:59:27,021 - INFO - Jobs scheduled at 00:00 and 05:30
+2024-09-24 00:00:00,122 - INFO - Market status: OPEN
+2024-09-24 00:00:00,122 - INFO - Collecting stock prices
+2024-09-24 00:00:00,126 - INFO - Number of symbols retrieved: 503
+2024-09-24 00:00:00,602 - ERROR - Error fetching data for AMD: 'timestamp'
+2024-09-24 00:00:01,365 - ERROR - Error fetching data for ABBV: 'timestamp'
+2024-09-24 00:00:02,173 - ERROR - Error fetching data for ADBE: 'timestamp'
+2024-09-24 00:00:02,783 - ERROR - Error fetching data for ABT: 'timestamp'
+2024-09-24 00:00:03,773 - ERROR - Error fetching data for A: 'timestamp'
+2024-09-24 00:00:04,914 - ERROR - Error fetching data for AES: 'timestamp'
+2024-09-24 00:00:05,566 - ERROR - Error fetching data for ACN: 'timestamp'
+2024-09-24 00:00:06,169 - ERROR - Error fetching data for MMM: 'timestamp'
+2024-09-24 00:00:06,769 - ERROR - Error fetching data for AFL: 'timestamp'
+2024-09-24 00:00:07,293 - ERROR - Error fetching data for AOS: 'timestamp'
+2024-09-24 00:00:08,221 - ERROR - Error fetching data for ABNB: 'timestamp'
+2024-09-24 00:00:08,824 - ERROR - Error fetching data for GOOGL: 'timestamp'
+2024-09-24 00:00:09,413 - ERROR - Error fetching data for ARE: 'timestamp'
+2024-09-24 00:00:09,948 - ERROR - Error fetching data for ALGN: 'timestamp'
+2024-09-24 00:00:10,471 - ERROR - Error fetching data for AKAM: 'timestamp'
+2024-09-24 00:00:11,018 - ERROR - Error fetching data for ALL: 'timestamp'
+2024-09-24 00:00:11,597 - ERROR - Error fetching data for ALB: 'timestamp'
+2024-09-24 00:00:12,173 - ERROR - Error fetching data for ALLE: 'timestamp'
+2024-09-24 00:00:12,710 - ERROR - Error fetching data for LNT: 'timestamp'
+2024-09-24 00:00:13,329 - ERROR - Error fetching data for APD: 'timestamp'
+2024-09-24 00:00:14,295 - ERROR - Error fetching data for GOOG: 'timestamp'
+2024-09-24 00:00:14,819 - ERROR - Error fetching data for AMT: 'timestamp'
+2024-09-24 00:00:15,679 - ERROR - Error fetching data for AMCR: 'timestamp'
+2024-09-24 00:00:16,283 - INFO - Shutting down market data collector
+2024-09-24 00:07:30,863 - INFO - Database tables created or verified.
+2024-09-24 00:07:30,864 - INFO - Starting market data collector
+2024-09-24 00:07:30,865 - INFO - Jobs scheduled at 00:08 and 05:30
+2024-09-24 00:08:00,962 - INFO - Market status: BEFORE_OPEN
+2024-09-24 00:08:00,962 - INFO - Collecting stock prices
+2024-09-24 00:08:00,965 - INFO - Number of symbols retrieved: 503
+2024-09-24 00:08:01,474 - ERROR - Error fetching data for AMD: 'timestamp'
+2024-09-24 00:08:02,019 - ERROR - Error fetching data for ABBV: 'timestamp'
+2024-09-24 00:08:02,566 - ERROR - Error fetching data for AOS: 'timestamp'
+2024-09-24 00:08:03,000 - ERROR - Error fetching data for ACN: 'timestamp'
+2024-09-24 00:08:03,480 - ERROR - Error fetching data for AES: 'timestamp'
+2024-09-24 00:08:03,884 - ERROR - Error fetching data for A: 'timestamp'
+2024-09-24 00:08:04,296 - ERROR - Error fetching data for ADBE: 'timestamp'
+2024-09-24 00:08:04,687 - ERROR - Error fetching data for ABT: 'timestamp'
+2024-09-24 00:08:05,095 - ERROR - Error fetching data for MMM: 'timestamp'
+2024-09-24 00:08:05,473 - ERROR - Error fetching data for AFL: 'timestamp'
+2024-09-24 00:08:05,877 - INFO - Shutting down market data collector
+2024-09-24 00:22:58,016 - INFO - Database tables created or verified.
+2024-09-24 00:22:58,017 - INFO - Starting market data collector
+2024-09-24 00:22:58,017 - INFO - Jobs scheduled at 00:23 and 05:30
+2024-09-24 00:23:00,103 - INFO - Market status: BEFORE_OPEN
+2024-09-24 00:23:00,103 - INFO - Collecting stock prices
+2024-09-24 00:23:00,106 - INFO - Number of symbols retrieved: 503
+2024-09-24 00:23:13,646 - INFO - Shutting down market data collector
+2024-09-24 00:40:30,731 - INFO - Database tables created or verified.
+2024-09-24 00:40:30,732 - INFO - Starting market data collector
+2024-09-24 00:40:30,732 - INFO - Jobs scheduled at 00:41 and 05:30
+2024-09-24 00:41:00,836 - INFO - Market status: BEFORE_OPEN
+2024-09-24 00:41:00,836 - INFO - Collecting stock prices
+2024-09-24 00:41:00,839 - INFO - Number of symbols retrieved: 503
+2024-09-24 00:41:26,772 - INFO - Shutting down market data collector
+2024-09-24 00:42:33,841 - INFO - Database tables created or verified.
+2024-09-24 00:42:33,842 - INFO - Starting market data collector
+2024-09-24 00:42:33,844 - INFO - Jobs scheduled at 00:43 and 05:30
+2024-09-24 00:43:00,941 - INFO - Market status: BEFORE_OPEN
+2024-09-24 00:43:00,941 - INFO - Collecting stock prices
+2024-09-24 00:43:00,945 - INFO - Number of symbols retrieved: 503
+2024-09-24 00:43:01,321 - ERROR - Error fetching data for AMD: 'timestamp'
+2024-09-24 00:43:02,031 - ERROR - Error fetching data for ABBV: 'timestamp'
+2024-09-24 00:43:02,493 - ERROR - Error fetching data for ACN: 'timestamp'
+2024-09-24 00:43:02,914 - ERROR - Error fetching data for ABT: 'timestamp'
+2024-09-24 00:43:03,380 - ERROR - Error fetching data for AFL: 'timestamp'
+2024-09-24 00:43:03,801 - ERROR - Error fetching data for A: 'timestamp'
+2024-09-24 00:43:04,249 - ERROR - Error fetching data for ADBE: 'timestamp'
+2024-09-24 00:43:04,665 - ERROR - Error fetching data for AOS: 'timestamp'
+2024-09-24 00:43:05,097 - ERROR - Error fetching data for AES: 'timestamp'
+2024-09-24 00:43:05,686 - ERROR - Error fetching data for MMM: 'timestamp'
+2024-09-24 00:43:06,439 - ERROR - Error fetching data for ABNB: 'timestamp'
+2024-09-24 00:43:06,838 - ERROR - Error fetching data for ALGN: 'timestamp'
+2024-09-24 00:43:07,298 - ERROR - Error fetching data for GOOGL: 'timestamp'
+2024-09-24 00:43:07,686 - ERROR - Error fetching data for ALLE: 'timestamp'
+2024-09-24 00:43:08,105 - ERROR - Error fetching data for LNT: 'timestamp'
+2024-09-24 00:43:08,694 - ERROR - Error fetching data for ALL: 'timestamp'
+2024-09-24 00:43:09,100 - ERROR - Error fetching data for APD: 'timestamp'
+2024-09-24 00:43:09,531 - ERROR - Error fetching data for AKAM: 'timestamp'
+2024-09-24 00:43:10,208 - ERROR - Error fetching data for ALB: 'timestamp'
+2024-09-24 00:43:10,765 - INFO - Shutting down market data collector
+2024-09-24 01:06:17,631 - INFO - Database tables created or verified.
+2024-09-24 01:06:17,632 - INFO - Starting market data collector
+2024-09-24 01:06:17,632 - INFO - Jobs scheduled at 01:07 and 05:30
+2024-09-24 01:07:00,737 - INFO - Market status: BEFORE_OPEN
+2024-09-24 01:07:00,738 - INFO - Collecting stock prices
+2024-09-24 01:07:00,741 - INFO - Number of symbols retrieved: 503
+2024-09-24 01:07:28,765 - INFO - Shutting down market data collector

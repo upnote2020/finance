@@ -55,7 +55,9 @@ class Config:
 
     def get(self, key : str, default : Any = None) -> Any:
         return self.config.get(key, default)
-
+    
+    def __getitem__(self, key):
+        return self.config[key]
 
 
 class MarketDataCollector:
@@ -88,8 +90,8 @@ class MarketDataCollector:
 
     # db 주소 불러오기
     def get_database_url(self) -> str:
-        db_config = self.config['database']
-        return f"postgresql://{db_config['user']}:{db_config['password']}@{db_config['host']}:{db_config['port']}/{db_config['name']}"
+        db_config = self.config.get('database', {})
+        return f"postgresql://{db_config.get('user')}:{db_config.get('password')}@{db_config.get('host')}:{db_config.get('port')}/{db_config.get('name')}"
 
 
     # db 연결
@@ -123,8 +125,8 @@ class MarketDataCollector:
             Column('high', Float),
             Column('low', Float),
             Column('close', Float),
-            Column('volume', Integer),
             Column('adj_close', Float),
+            Column('volume', Integer),
             Column('change', Float),
             Column('adj_change', Float),
             Column('adj_amount', Float)
@@ -138,7 +140,7 @@ class MarketDataCollector:
     # 날짜 취득
     def get_current_date(self) -> datetime:
         if self.config.test_date:
-            return datetime.strptime(self.config.test_date, '%Y-%m-%d').replace(tzinfo=self.eastern)
+            return self.eastern.localize(datetime.strptime(self.config.test_date, '%Y-%m-%d'))
         return datetime.now(self.eastern)
 
 
@@ -164,7 +166,7 @@ class MarketDataCollector:
         try:
             df = fdr.StockListing('S&P500')
             cols_ren = {'Symbol':'symbol', 'Name':'name', 'Sector':'sector', 'Industry':'industry'}
-            df = df.rename(cols_ren)
+            df = df.rename(columns=cols_ren)
             return df
         except Exception as e:
             self.logger.warning(f"Failed to fetch S&P 500 list from FinanceDataReader: {e}")
@@ -185,8 +187,8 @@ class MarketDataCollector:
             self.logger.error(f"Unexpected number of companies in S&P 500 list: {len(df_SnP_list)}")
             return
         
-        df_SnP_list.loc[df_SnP_list['Symbol'] == 'BRKB', 'Symbol'] = 'BRK-B'
-        df_SnP_list.loc[df_SnP_list['Symbol'] == 'BFB', 'Symbol'] = 'BF-B'
+        df_SnP_list.loc[df_SnP_list['symbol'] == 'BRKB', 'symbol'] = 'BRK-B'
+        df_SnP_list.loc[df_SnP_list['symbol'] == 'BFB', 'symbol'] = 'BF-B'
 
         session = self.Session()
         try:
@@ -217,7 +219,7 @@ class MarketDataCollector:
         session = self.Session()
         try:
             result = session.execute(self.snp500_table.select())
-            return [row['symbol'] for row in result]
+            return [row[1] for row in result]
         except SQLAlchemyError as e:
             self.logger.error(f"Error fetching S&P 500 symbols: {e}")
             return []
@@ -228,30 +230,34 @@ class MarketDataCollector:
     # S&P 500 Data Daily Update
     async def fetch_stock_data_async(self, symbol : str) -> Tuple[str, Optional[pd.DataFrame]]:
         try:
-            # start_time = datetime.now(self.eastern) - timedelta(days=0)
-            # end_time = datetime.now(self.eastern)
-            # tp = yf.download(symbol, start=start_time, end=end_time)
-            now = self.get_current_date()
-            start_time = pd.to_datetime((now - timedelta(days = 0)).strftime('%Y-%m-%d'))
-            end_time = pd.to_datetime(now.strftime('%Y-%m-%d'))
-            start_ts = int(time.mktime(start_time.timetuple()))
-            end_ts = int(time.mktime(end_time.timetuple()))
+            start_time = datetime.now(self.eastern) - timedelta(days=1)
+            end_time = datetime.now(self.eastern)
+            tp = yf.download(symbol, start=start_time, end=end_time)
+            col_map = {'Date':'date', 'Open':'open', 'High':'high', 'Low':'low', 'Close':'close', 'Adj Close':'adj_close', 'Volume':'volume'}
+
+            # now = self.get_current_date()
+            # start_time = pd.to_datetime((now - timedelta(days = 0)).strftime('%Y-%m-%d'))
+            # end_time = pd.to_datetime(now.strftime('%Y-%m-%d'))
+            # start_ts = int(time.mktime(start_time.timetuple()))
+            # end_ts = int(time.mktime(end_time.timetuple()))
             
-            url = (
-                f'https://query2.finance.yahoo.com/v8/finance/chart/{symbol}?'
-                f'period1={start_ts}&period2={end_ts}&interval=1d&includeAdjustedClose=true'
-            )
+            # url = (
+            #     f'https://query2.finance.yahoo.com/v8/finance/chart/{symbol}?'
+            #     f'period1={start_ts}&period2={end_ts}&interval=1d&includeAdjustedClose=true'
+            # )
 
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url, headers={'user-agent': 'Mozilla/5.0 AppleWebKit/537.36'}) as response:
-                    response.raise_for_status()
-                    jo = await response.json()
+            # async with aiohttp.ClientSession() as session:
+            #     async with session.get(url, headers={'user-agent': 'Mozilla/5.0 AppleWebKit/537.36'}) as response:
+            #         response.raise_for_status()
+            #         jo = await response.json()
 
-            index = pd.to_datetime(jo['chart']['result'][0]['timestamp'], unit='s').normalize()
-            values = {**jo['chart']['result'][0]['indicators']['quote'][0], **jo['chart']['result'][0]['indicators']['adjclose'][0]}
+            # index = pd.to_datetime(jo['chart']['result'][0]['timestamp'], unit='s').normalize()
+            # values = {**jo['chart']['result'][0]['indicators']['quote'][0], **jo['chart']['result'][0]['indicators']['adjclose'][0]}
 
-            col_map = {'index':'date', 'open':'open', 'high':'high', 'low':'low', 'close':'close', 'volume':'volume', 'adjclose':'adj_close'}
-            tp = pd.DataFrame(data=values, index=index)
+            # col_map = {'index':'date', 'open':'open', 'high':'high', 'low':'low', 'close':'close', 'adjclose':'adj_close', 'volume':'volume'}
+            # tp = pd.DataFrame(data=values, index=index)
+            
+
             tp = tp.reset_index().rename(columns=col_map)
             tp = tp[col_map.values()]
             tp['date'] = tp['date'].astype(str)
@@ -269,7 +275,7 @@ class MarketDataCollector:
             return
 
         session = self.Session()
-
+        print(symbol, 'save')
         # symbol에 해당하는 변수 추출 조건
         stmt = select([self.snp500_table.c.name, self.snp500_table.c.sector, self.snp500_table.c.industry]).where(self.snp500_table.c.symbol == symbol)
         # symbol에 해당하는 변수 추출
@@ -298,8 +304,8 @@ class MarketDataCollector:
                     high=row['high'],
                     low=row['low'],
                     close=row['close'],
-                    volume=row['volume'],
                     adj_close=row['adj_close'],
+                    volume=row['volume'],
                     change=(row['close'] - row['open']) / row['open'],
                     adj_change=(row['adj_close'] - row['open']) / row['open'],
                     adj_amount=row['adj_close'] * row['volume']
@@ -318,16 +324,22 @@ class MarketDataCollector:
     async def collect_stock_prices_async(self) -> None:
         self.logger.info("Collecting stock prices")
         symbols = self.get_snp500_symbols()
+        self.logger.info(f"Number of symbols retrieved: {len(symbols)}")
+        if not symbols:
+            self.logger.warning("No symbols to process. Skipping stock price collection.")
+            return
+        
         semaphore = asyncio.Semaphore(10)
-
+        print(1)
         async def fetch_with_semaphore(symbol):
             async with semaphore:
                 return await self.fetch_stock_data_async(symbol)
-
+        print(2)
         tasks = [fetch_with_semaphore(symbol) for symbol in symbols]
         results = await asyncio.gather(*tasks)
 
         for symbol, data in results:
+            print(symbol, data)
             if data is not None and not data.empty:
                 self.save_stock_data(symbol, data)
 
@@ -364,7 +376,7 @@ class MarketDataCollector:
         try:
             status = self.check_market_status()
             self.logger.info(f"Market status: {status}")
-
+            status = 'AFTER_OPEN'
             if status == "BEFORE_OPEN":
                 self.update_snp500_list()
                 # self.collect_news()
@@ -382,7 +394,7 @@ class MarketDataCollector:
         now = self.get_current_date()
         # 서머타임이면, 정규장 한국 시간 오후 10시 30분 ~ 오전 5시 / 프리마켓 오후 5시 / 애프터마켓 오전 8시
         if now.dst():
-            before_time = "22:00"
+            before_time = "01:07"#"22:00"
             after_time = "05:30"
         # 서머타임 아니면, 정규장 한국 시간 오후 11시 30분 ~ 오전 6시 / 프리마켓 오후 6시 / 애프터마켓 오전 9시
         else:
