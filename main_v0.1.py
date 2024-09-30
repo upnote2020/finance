@@ -4,7 +4,7 @@ from logging.handlers import RotatingFileHandler
 import yaml
 from typing import List, Any, Optional, Tuple
 
-from sqlalchemy import create_engine, Column, Integer, String, Float, Date, Table, MetaData, select
+from sqlalchemy import create_engine, Column, Integer, String, Float, Date, Table, MetaData, select, text
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.pool import QueuePool
@@ -19,8 +19,8 @@ import FinanceDataReader as fdr
 import yfinance as yf
 
 import requests
-import asyncio
-import aiohttp
+import psutil
+# import aiohttp
 from retrying import retry
 
 from slack_sdk import WebClient
@@ -140,15 +140,15 @@ class MarketDataCollector:
     # 날짜 취득
     def get_current_date(self) -> datetime:
         if self.config.test_date:
-            return self.eastern.localize(datetime.strptime(self.config.test_date, '%Y-%m-%d'))
+            return self.eastern.localize(datetime.strptime(self.config.test_date, '%Y-%m-%d %H:%M:%S'))
         return datetime.now(self.eastern)
 
 
     # 장 상태 확인
-    def check_market_status(self) -> str:
-        now = self.get_current_date()
+    def check_market_status(self, now : datetime) -> str:
+        # now = self.get_current_date()
         us_holidays = holidays.US()
-
+        self.logger.info(f"Current date: {now}, Weekday: {now.weekday()}, Hour: {now.hour}")
         if now.date() in us_holidays:
             return "CLOSED_HOLIDAY"
         elif now.weekday() >= 5:
@@ -228,10 +228,10 @@ class MarketDataCollector:
 
 
     # S&P 500 Data Daily Update
-    async def fetch_stock_data_async(self, symbol : str) -> Tuple[str, Optional[pd.DataFrame]]:
+    def fetch_stock_data(self, symbol : str, now : datetime) -> Tuple[str, Optional[pd.DataFrame]]:
         try:
-            start_time = datetime.now(self.eastern) - timedelta(days=1)
-            end_time = datetime.now(self.eastern)
+            start_time = now - timedelta(days=30)
+            end_time = now
             tp = yf.download(symbol, start=start_time, end=end_time)
             col_map = {'Date':'date', 'Open':'open', 'High':'high', 'Low':'low', 'Close':'close', 'Adj Close':'adj_close', 'Volume':'volume'}
 
@@ -256,11 +256,10 @@ class MarketDataCollector:
 
             # col_map = {'index':'date', 'open':'open', 'high':'high', 'low':'low', 'close':'close', 'adjclose':'adj_close', 'volume':'volume'}
             # tp = pd.DataFrame(data=values, index=index)
-            
 
             tp = tp.reset_index().rename(columns=col_map)
             tp = tp[col_map.values()]
-            tp['date'] = tp['date'].astype(str)
+            tp['date'] = tp['date'].dt.strftime('%Y-%m-%d')  # Convert date to string format
 
             return symbol, tp
         except Exception as e:
@@ -269,50 +268,46 @@ class MarketDataCollector:
 
 
     # S&P 500 Data Daily Save
-    def save_stock_data(self, symbol : str, data : pd.DataFrame) -> None:
+    def save_stock_data(self, index : int, symbol : str, data : pd.DataFrame, now : datetime) -> None:
         if data.empty:
             self.logger.warning(f"No data to save for {symbol}")
             return
 
         session = self.Session()
-        print(symbol, 'save')
-        # symbol에 해당하는 변수 추출 조건
-        stmt = select([self.snp500_table.c.name, self.snp500_table.c.sector, self.snp500_table.c.industry]).where(self.snp500_table.c.symbol == symbol)
-        # symbol에 해당하는 변수 추출
-        result = session.execute(stmt)
-        row_symbol = result.fetchone()
-
         try:
-            # 1안
-            # data['name'] = row_symbol['name']
-            # data['sector'] = row_symbol['sector']
-            # data['industry'] = row_symbol['industry']
-            # change=(row['close'] - row['open']) / row['open'] # 반영되게 수정 필요
-            # adj_change=(row['adj_close'] - row['open']) / row['open'] # 반영되게 수정 필요
-            # adj_amount=row['adj_close'] * row['volume'] # 반영되게 수정 필요
-            # records = data.to_dict(orient='records')
-            # session.bulk_insert_mappings(self.stock_data_table, records)
-            # 2안
-            for index, row in data.iterrows():
+            # Fetch symbol details
+            stmt = select(self.snp500_table.c.name, self.snp500_table.c.sector, self.snp500_table.c.industry).where(self.snp500_table.c.symbol == symbol)
+            result = session.execute(stmt)
+            row_symbol = result.fetchone()
+
+            if row_symbol is None:
+                self.logger.warning(f"No matching symbol found in snp500_table for {symbol}")
+                return
+
+            for _, row in data.iterrows():
+                change = (row['close'] - row['open']) / row['open'] if row['open'] != 0 else 0
+                adj_change = (row['adj_close'] - row['open']) / row['open'] if row['open'] != 0 else 0
+                adj_amount = row['adj_close'] * row['volume']
+
                 session.execute(self.stock_data_table.insert().values(
-                    date=index.date(),
+                    date=row['date'],
                     symbol=symbol,
-                    name=row_symbol['name'],
-                    sector=row_symbol['sector'],
-                    industry=row_symbol['industry'],
+                    name=row_symbol.name,
+                    sector=row_symbol.sector,
+                    industry=row_symbol.industry,
                     open=row['open'],
                     high=row['high'],
                     low=row['low'],
                     close=row['close'],
                     adj_close=row['adj_close'],
                     volume=row['volume'],
-                    change=(row['close'] - row['open']) / row['open'],
-                    adj_change=(row['adj_close'] - row['open']) / row['open'],
-                    adj_amount=row['adj_close'] * row['volume']
+                    change=change,
+                    adj_change=adj_change,
+                    adj_amount=adj_amount
                 ))
 
             session.commit()
-            self.logger.info(f"Stock data saved for {symbol}")
+            self.logger.info(f"{index} : {symbol} Stock data saved at {now}")
         except SQLAlchemyError as e:
             session.rollback()
             self.logger.error(f"Error saving stock data for {symbol}: {e}")
@@ -321,35 +316,33 @@ class MarketDataCollector:
 
 
     # S&P 500 Data Daily Load
-    async def collect_stock_prices_async(self) -> None:
-        self.logger.info("Collecting stock prices")
+    def collect_stock_prices(self, now : datetime) -> None:
+        self.logger.info(f"Collecting stock prices at {now}")
         symbols = self.get_snp500_symbols()
         self.logger.info(f"Number of symbols retrieved: {len(symbols)}")
         if not symbols:
             self.logger.warning("No symbols to process. Skipping stock price collection.")
             return
         
-        semaphore = asyncio.Semaphore(10)
-        print(1)
-        async def fetch_with_semaphore(symbol):
-            async with semaphore:
-                return await self.fetch_stock_data_async(symbol)
-        print(2)
-        tasks = [fetch_with_semaphore(symbol) for symbol in symbols]
-        results = await asyncio.gather(*tasks)
-
-        for symbol, data in results:
-            print(symbol, data)
+        for index, symbol in enumerate(symbols):
+            symbol, data = self.fetch_stock_data(symbol, now)
             if data is not None and not data.empty:
-                self.save_stock_data(symbol, data)
+                self.save_stock_data(index, symbol, data, now)
+        self.logger.info("Stock price collection completed")
+
 
 
     def collect_news(self):
         self.logger.info("Collecting news")
-        symbol = 'AAPL'
-        ticker = yf.Ticker(symbol)
-        news = ticker.news
-        # 뉴스 수집 로직 구현
+        try:
+            webhook_url = self.config['webhook_url_perplexity']
+            data = {"stock_list": ['dummy']}  # TODO: data 전송으로 s&p 500 리스트 모두 전송하는게 맞을지 검토 필요
+            response = requests.post(webhook_url, json=data, timeout=10)
+            response.raise_for_status()
+            self.logger.info("Signal sent to Make.com successfully")
+        except requests.exceptions.RequestException as e:
+            self.logger.error(f"Error sending signal to Make.com: {e}")
+            raise
 
 
     def analyze_stock(self) -> List[str]:
@@ -372,18 +365,18 @@ class MarketDataCollector:
     
 
     # 잡 설정
-    async def job(self) -> None:
+    def job(self) -> None:
         try:
-            status = self.check_market_status()
+            now = self.get_current_date()
+            status = self.check_market_status(now)
             self.logger.info(f"Market status: {status}")
-            status = 'AFTER_OPEN'
             if status == "BEFORE_OPEN":
                 self.update_snp500_list()
                 # self.collect_news()
                 # self.send_signal_to_make()
             elif status == "AFTER_OPEN":
                 # self.collect_news()
-                await self.collect_stock_prices_async()
+                self.collect_stock_prices(now)
                 # stock_list = self.analyze_stock()
                 # self.send_signal_to_make(stock_list)
         except Exception as e:
@@ -391,21 +384,51 @@ class MarketDataCollector:
 
     # 스케줄링
     def schedule_jobs(self) -> None:
+        schedule.every().day.at("00:00").do(self.update_job_schedule)
+        self.update_job_schedule()
+
+    def update_job_schedule(self):
         now = self.get_current_date()
-        # 서머타임이면, 정규장 한국 시간 오후 10시 30분 ~ 오전 5시 / 프리마켓 오후 5시 / 애프터마켓 오전 8시
-        if now.dst():
-            before_time = "01:07"#"22:00"
-            after_time = "05:30"
-        # 서머타임 아니면, 정규장 한국 시간 오후 11시 30분 ~ 오전 6시 / 프리마켓 오후 6시 / 애프터마켓 오전 9시
-        else:
+        if now.dst():           # 서머타임이면, 정규장 한국 시간 오후 10시 30분 ~ 오전 5시 / 프리마켓 오후 5시 / 애프터마켓 오전 8시
+            before_time = "22:00" #"22:00"
+            after_time = "08:48" # 05:30
+        else:                   # 서머타임 아니면, 정규장 한국 시간 오후 11시 30분 ~ 오전 6시 / 프리마켓 오후 6시 / 애프터마켓 오전 9시
             before_time = "23:00"
             after_time = "06:30"
 
-        schedule.every().day.at(before_time).do(lambda: asyncio.run(self.job()))
-        schedule.every().day.at(after_time).do(lambda: asyncio.run(self.job()))
+        schedule.clear('daily-jobs')
+        schedule.every().day.at(before_time).do(self.job).tag('daily-jobs')
+        schedule.every().day.at(after_time).do(self.job).tag('daily-jobs')
 
         self.logger.info(f"Jobs scheduled at {before_time} and {after_time}")
 
+
+    def health_check(self):
+        try:
+            # 메모리 사용량 체크
+            process = psutil.Process()
+            memory_info = process.memory_info()
+            memory_usage = memory_info.rss / 1024 / 1024  # MB 단위로 변환
+
+            # DB 연결 상태 체크
+            session = self.Session()
+            session.execute(text("SELECT 1"))
+            session.close()
+
+            # 디스크 사용량 체크
+            disk_usage = psutil.disk_usage('/')
+            disk_percent = disk_usage.percent
+
+            self.logger.info(f"Health Check - Memory Usage: {memory_usage:.2f} MB, Disk Usage: {disk_percent:.2f}%")
+
+            # 메모리나 디스크 사용량이 특정 임계값을 넘으면 경고 로그 출력
+            if memory_usage > 1000:  # 1GB 이상 사용 시
+                self.logger.warning(f"High memory usage detected: {memory_usage:.2f} MB")
+            if disk_percent > 90:  # 디스크 사용량 90% 이상 시
+                self.logger.warning(f"High disk usage detected: {disk_percent:.2f}%")
+
+        except Exception as e:
+            self.logger.error(f"Error during health check: {e}")
 
     # 작동 진입점
     def run(self) -> None:
@@ -413,10 +436,15 @@ class MarketDataCollector:
         self.logger.info("Starting market data collector")
         self.schedule_jobs()
 
+        last_health_check = time.time()
         try:
             while True:
                 schedule.run_pending()
                 time.sleep(1)
+
+                if time.time() - last_health_check > 3600:
+                    self.health_check()
+                    last_health_check = time.time()
         except Exception as e:
             self.logger.error(f"An error occurred in the main loop: {e}")
             time.sleep(60)  # 1분 대기 후 재시도

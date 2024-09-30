@@ -202,3 +202,1606 @@
 2024-09-24 01:07:00,738 - INFO - Collecting stock prices
 2024-09-24 01:07:00,741 - INFO - Number of symbols retrieved: 503
 2024-09-24 01:07:28,765 - INFO - Shutting down market data collector
+2024-09-30 22:15:18,124 - INFO - Database tables created or verified.
+2024-09-30 22:15:18,125 - INFO - Starting market data collector
+2024-09-30 22:15:18,469 - INFO - Market status: CLOSED_WEEKEND
+2024-09-30 22:15:18,470 - INFO - Collecting stock prices
+2024-09-30 22:15:18,489 - INFO - Number of symbols retrieved: 503
+2024-09-30 22:17:27,278 - INFO - Database tables created or verified.
+2024-09-30 22:17:27,279 - INFO - Starting market data collector
+2024-09-30 22:17:27,399 - INFO - Market status: CLOSED_WEEKEND
+2024-09-30 22:17:28,797 - INFO - S&P 500 list updated successfully
+2024-09-30 22:21:39,454 - INFO - Database tables created or verified.
+2024-09-30 22:21:39,455 - INFO - Starting market data collector
+2024-09-30 22:21:39,455 - INFO - Jobs scheduled at 22:22 and 05:30
+2024-09-30 22:22:00,580 - INFO - Market status: CLOSED_WEEKEND
+2024-09-30 22:22:02,014 - INFO - S&P 500 list updated successfully
+2024-09-30 22:24:45,497 - INFO - Shutting down market data collector
+2024-09-30 22:24:56,226 - INFO - Database tables created or verified.
+2024-09-30 22:24:56,227 - INFO - Starting market data collector
+2024-09-30 22:24:56,228 - INFO - Jobs scheduled at 22:25 and 05:30
+2024-09-30 22:25:00,359 - INFO - Market status: CLOSED_WEEKEND
+2024-09-30 22:25:01,961 - INFO - S&P 500 list updated successfully
+2024-09-30 22:33:25,063 - INFO - Shutting down market data collector
+2024-09-30 22:33:38,102 - INFO - Database tables created or verified.
+2024-09-30 22:33:38,102 - INFO - Starting market data collector
+2024-09-30 22:33:38,103 - INFO - Jobs scheduled at 22:31 and 05:30
+2024-09-30 22:33:41,256 - INFO - Shutting down market data collector
+2024-09-30 22:33:43,712 - INFO - Database tables created or verified.
+2024-09-30 22:33:43,713 - INFO - Starting market data collector
+2024-09-30 22:33:43,715 - INFO - Jobs scheduled at 22:34 and 05:30
+2024-09-30 22:34:00,838 - INFO - Market status: BEFORE_OPEN
+2024-09-30 22:34:02,211 - INFO - S&P 500 list updated successfully
+2024-09-30 23:03:21,979 - INFO - Shutting down market data collector
+2024-09-30 23:03:32,203 - INFO - Database tables created or verified.
+2024-09-30 23:03:32,204 - INFO - Starting market data collector
+2024-09-30 23:03:32,205 - INFO - Jobs scheduled at 23:05 and 05:30
+2024-09-30 23:05:00,648 - INFO - Market status: BEFORE_OPEN
+2024-09-30 23:05:02,059 - INFO - S&P 500 list updated successfully
+2024-10-01 00:00:00,396 - INFO - Jobs scheduled at 23:05 and 05:30
+2024-10-01 00:03:32,497 - ERROR - Error during health check: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2024-10-01 00:10:57,771 - INFO - Shutting down market data collector
+2024-10-01 00:11:00,613 - INFO - Database tables created or verified.
+2024-10-01 00:11:00,613 - INFO - Starting market data collector
+2024-10-01 00:11:00,615 - INFO - Jobs scheduled at 00:11 and 05:30
+2024-10-01 00:11:09,453 - INFO - Shutting down market data collector
+2024-10-01 00:11:12,144 - INFO - Database tables created or verified.
+2024-10-01 00:11:12,145 - INFO - Starting market data collector
+2024-10-01 00:11:12,146 - INFO - Jobs scheduled at 00:12 and 05:30
+2024-10-01 00:12:00,306 - INFO - Market status: BEFORE_OPEN
+2024-10-01 00:12:01,697 - INFO - S&P 500 list updated successfully
+2024-10-01 00:14:47,357 - INFO - Shutting down market data collector
+2024-10-01 00:15:26,044 - INFO - Database tables created or verified.
+2024-10-01 00:15:26,044 - INFO - Starting market data collector
+2024-10-01 00:15:26,045 - INFO - Jobs scheduled at 22:00 and 00:16
+2024-10-01 00:16:00,173 - INFO - Current date: 2024-09-23 17:00:00-04:00, Weekday: 0, Hour: 17
+2024-10-01 00:16:00,174 - INFO - Market status: AFTER_OPEN
+2024-10-01 00:16:01,437 - INFO - S&P 500 list updated successfully
+2024-10-01 00:16:38,612 - INFO - Shutting down market data collector
+2024-10-01 00:16:41,405 - INFO - Database tables created or verified.
+2024-10-01 00:16:41,406 - INFO - Starting market data collector
+2024-10-01 00:16:41,407 - INFO - Jobs scheduled at 22:00 and 00:16
+2024-10-01 00:16:42,954 - INFO - Shutting down market data collector
+2024-10-01 00:16:52,320 - INFO - Database tables created or verified.
+2024-10-01 00:16:52,321 - INFO - Starting market data collector
+2024-10-01 00:16:52,322 - INFO - Jobs scheduled at 22:00 and 00:17
+2024-10-01 00:17:00,440 - INFO - Current date: 2024-09-23 17:00:00-04:00, Weekday: 0, Hour: 17
+2024-10-01 00:17:00,440 - INFO - Market status: AFTER_OPEN
+2024-10-01 00:17:00,441 - INFO - Collecting stock prices
+2024-10-01 00:17:00,444 - INFO - Number of symbols retrieved: 503
+2024-10-01 00:17:02,553 - ERROR - An error occurred during job execution: Column expression, FROM clause, or other columns clause element expected, got [Column('name', String(), table=<snp500_list>), Column('sector', String(), table=<snp500_list>), Column('industry', String(), table=<snp500_list>)]. Did you mean to say select(Column('name', String(), table=<snp500_list>), Column('sector', String(), table=<snp500_list>), Column('industry', String(), table=<snp500_list>))?
+2024-10-01 00:17:16,270 - INFO - Shutting down market data collector
+2024-10-01 07:46:23,257 - INFO - Database tables created or verified.
+2024-10-01 07:46:23,258 - INFO - Starting market data collector
+2024-10-01 07:46:23,259 - INFO - Jobs scheduled at 22:00 and 07:47
+2024-10-01 07:47:00,423 - INFO - Current date: 2024-09-23 17:00:00-04:00, Weekday: 0, Hour: 17
+2024-10-01 07:47:00,423 - INFO - Market status: AFTER_OPEN
+2024-10-01 07:47:00,424 - INFO - Collecting stock prices
+2024-10-01 07:47:00,428 - INFO - Number of symbols retrieved: 503
+2024-10-01 07:47:01,294 - INFO - Stock data saved for MMM
+2024-10-01 07:47:01,505 - INFO - Stock data saved for AOS
+2024-10-01 07:47:01,812 - INFO - Stock data saved for ABT
+2024-10-01 07:47:01,991 - INFO - Stock data saved for ABBV
+2024-10-01 07:47:02,175 - INFO - Stock data saved for ACN
+2024-10-01 07:47:02,355 - INFO - Stock data saved for ADBE
+2024-10-01 07:47:02,516 - INFO - Stock data saved for AMD
+2024-10-01 07:47:02,742 - INFO - Stock data saved for AES
+2024-10-01 07:47:02,958 - INFO - Stock data saved for AFL
+2024-10-01 07:47:03,241 - INFO - Stock data saved for A
+2024-10-01 07:47:03,477 - INFO - Stock data saved for APD
+2024-10-01 07:47:03,640 - INFO - Stock data saved for ABNB
+2024-10-01 07:47:03,804 - INFO - Stock data saved for AKAM
+2024-10-01 07:47:04,000 - INFO - Stock data saved for ALB
+2024-10-01 07:47:04,205 - INFO - Stock data saved for ARE
+2024-10-01 07:47:04,570 - INFO - Stock data saved for ALGN
+2024-10-01 07:47:04,757 - INFO - Stock data saved for ALLE
+2024-10-01 07:47:04,961 - INFO - Stock data saved for LNT
+2024-10-01 07:47:05,174 - INFO - Stock data saved for ALL
+2024-10-01 07:47:05,416 - INFO - Stock data saved for GOOGL
+2024-10-01 07:47:05,579 - INFO - Stock data saved for GOOG
+2024-10-01 07:47:05,825 - INFO - Stock data saved for MO
+2024-10-01 07:47:05,989 - INFO - Stock data saved for AMZN
+2024-10-01 07:47:06,169 - INFO - Stock data saved for AMCR
+2024-10-01 07:47:06,361 - INFO - Stock data saved for AEE
+2024-10-01 07:47:06,640 - INFO - Stock data saved for AEP
+2024-10-01 07:47:06,865 - INFO - Stock data saved for AXP
+2024-10-01 07:47:07,083 - INFO - Stock data saved for AIG
+2024-10-01 07:47:07,268 - INFO - Stock data saved for AMT
+2024-10-01 07:47:07,449 - INFO - Stock data saved for AWK
+2024-10-01 07:47:07,631 - INFO - Stock data saved for AMP
+2024-10-01 07:47:07,856 - INFO - Stock data saved for AME
+2024-10-01 07:47:08,041 - INFO - Stock data saved for AMGN
+2024-10-01 07:47:08,357 - INFO - Stock data saved for APH
+2024-10-01 07:47:08,563 - INFO - Stock data saved for ADI
+2024-10-01 07:47:08,726 - INFO - Stock data saved for ANSS
+2024-10-01 07:47:08,939 - INFO - Stock data saved for AON
+2024-10-01 07:47:09,153 - INFO - Stock data saved for APA
+2024-10-01 07:47:09,363 - INFO - Stock data saved for AAPL
+2024-10-01 07:47:09,561 - INFO - Stock data saved for AMAT
+2024-10-01 07:47:09,733 - INFO - Stock data saved for APTV
+2024-10-01 07:47:09,894 - INFO - Stock data saved for ACGL
+2024-10-01 07:47:10,100 - INFO - Stock data saved for ADM
+2024-10-01 07:47:10,274 - INFO - Stock data saved for ANET
+2024-10-01 07:47:10,479 - INFO - Stock data saved for AJG
+2024-10-01 07:47:10,672 - INFO - Stock data saved for AIZ
+2024-10-01 07:47:10,888 - INFO - Stock data saved for T
+2024-10-01 07:47:11,099 - INFO - Stock data saved for ATO
+2024-10-01 07:47:11,293 - INFO - Stock data saved for ADSK
+2024-10-01 07:47:11,516 - INFO - Stock data saved for ADP
+2024-10-01 07:47:11,679 - INFO - Stock data saved for AZO
+2024-10-01 07:47:11,870 - INFO - Stock data saved for AVB
+2024-10-01 07:47:12,100 - INFO - Stock data saved for AVY
+2024-10-01 07:47:12,274 - INFO - Stock data saved for AXON
+2024-10-01 07:47:12,490 - INFO - Stock data saved for BKR
+2024-10-01 07:47:12,696 - INFO - Stock data saved for BALL
+2024-10-01 07:47:12,908 - INFO - Stock data saved for BAC
+2024-10-01 07:47:13,114 - INFO - Stock data saved for BK
+2024-10-01 07:47:13,325 - INFO - Stock data saved for BBWI
+2024-10-01 07:47:13,548 - INFO - Stock data saved for BAX
+2024-10-01 07:47:13,768 - INFO - Stock data saved for BDX
+2024-10-01 07:47:13,931 - INFO - Stock data saved for BRK-B
+2024-10-01 07:47:14,121 - INFO - Stock data saved for BBY
+2024-10-01 07:47:14,305 - INFO - Stock data saved for TECH
+2024-10-01 07:47:14,467 - INFO - Stock data saved for BIIB
+2024-10-01 07:47:14,653 - INFO - Stock data saved for BLK
+2024-10-01 07:47:14,844 - INFO - Stock data saved for BX
+2024-10-01 07:47:15,102 - INFO - Stock data saved for BA
+2024-10-01 07:47:15,278 - INFO - Stock data saved for BKNG
+2024-10-01 07:47:15,477 - INFO - Stock data saved for BWA
+2024-10-01 07:47:15,638 - INFO - Stock data saved for BSX
+2024-10-01 07:47:15,871 - INFO - Stock data saved for BMY
+2024-10-01 07:47:16,049 - INFO - Stock data saved for AVGO
+2024-10-01 07:47:16,232 - INFO - Stock data saved for BR
+2024-10-01 07:47:16,432 - INFO - Stock data saved for BRO
+2024-10-01 07:47:16,646 - INFO - Stock data saved for BF-B
+2024-10-01 07:47:16,808 - INFO - Stock data saved for BLDR
+2024-10-01 07:47:17,003 - INFO - Stock data saved for BG
+2024-10-01 07:47:17,204 - INFO - Stock data saved for BXP
+2024-10-01 07:47:17,398 - INFO - Stock data saved for CHRW
+2024-10-01 07:47:17,559 - INFO - Stock data saved for CDNS
+2024-10-01 07:47:17,722 - INFO - Stock data saved for CZR
+2024-10-01 07:47:17,922 - INFO - Stock data saved for CPT
+2024-10-01 07:47:18,156 - INFO - Stock data saved for CPB
+2024-10-01 07:47:18,353 - INFO - Stock data saved for COF
+2024-10-01 07:47:18,570 - INFO - Stock data saved for CAH
+2024-10-01 07:47:18,733 - INFO - Stock data saved for KMX
+2024-10-01 07:47:18,949 - INFO - Stock data saved for CCL
+2024-10-01 07:47:19,117 - INFO - Stock data saved for CARR
+2024-10-01 07:47:19,281 - INFO - Stock data saved for CTLT
+2024-10-01 07:47:19,534 - INFO - Stock data saved for CAT
+2024-10-01 07:47:19,721 - INFO - Stock data saved for CBOE
+2024-10-01 07:47:19,884 - INFO - Stock data saved for CBRE
+2024-10-01 07:47:20,059 - INFO - Stock data saved for CDW
+2024-10-01 07:47:20,246 - INFO - Stock data saved for CE
+2024-10-01 07:47:20,429 - INFO - Stock data saved for COR
+2024-10-01 07:47:20,600 - INFO - Stock data saved for CNC
+2024-10-01 07:47:20,851 - INFO - Stock data saved for CNP
+2024-10-01 07:47:21,031 - INFO - Stock data saved for CF
+2024-10-01 07:47:21,191 - INFO - Stock data saved for CRL
+2024-10-01 07:47:21,398 - INFO - Stock data saved for SCHW
+2024-10-01 07:47:21,563 - INFO - Stock data saved for CHTR
+2024-10-01 07:47:21,813 - INFO - Stock data saved for CVX
+2024-10-01 07:47:21,975 - INFO - Stock data saved for CMG
+2024-10-01 07:47:22,180 - INFO - Stock data saved for CB
+2024-10-01 07:47:22,380 - INFO - Stock data saved for CHD
+2024-10-01 07:47:22,596 - INFO - Stock data saved for CI
+2024-10-01 07:47:22,809 - INFO - Stock data saved for CINF
+2024-10-01 07:47:23,018 - INFO - Stock data saved for CTAS
+2024-10-01 07:47:23,231 - INFO - Stock data saved for CSCO
+2024-10-01 07:47:23,447 - INFO - Stock data saved for C
+2024-10-01 07:47:23,628 - INFO - Stock data saved for CFG
+2024-10-01 07:47:23,858 - INFO - Stock data saved for CLX
+2024-10-01 07:47:24,049 - INFO - Stock data saved for CME
+2024-10-01 07:47:24,277 - INFO - Stock data saved for CMS
+2024-10-01 07:47:24,528 - INFO - Stock data saved for KO
+2024-10-01 07:47:24,735 - INFO - Stock data saved for CTSH
+2024-10-01 07:47:24,966 - INFO - Stock data saved for CL
+2024-10-01 07:47:25,169 - INFO - Stock data saved for CMCSA
+2024-10-01 07:47:25,372 - INFO - Stock data saved for CAG
+2024-10-01 07:47:25,579 - INFO - Stock data saved for COP
+2024-10-01 07:47:25,804 - INFO - Stock data saved for ED
+2024-10-01 07:47:25,978 - INFO - Stock data saved for STZ
+2024-10-01 07:47:26,151 - INFO - Stock data saved for CEG
+2024-10-01 07:47:26,366 - INFO - Stock data saved for COO
+2024-10-01 07:47:26,529 - INFO - Stock data saved for CPRT
+2024-10-01 07:47:26,737 - INFO - Stock data saved for GLW
+2024-10-01 07:47:26,906 - INFO - Stock data saved for CPAY
+2024-10-01 07:47:27,071 - INFO - Stock data saved for CTVA
+2024-10-01 07:47:27,232 - INFO - Stock data saved for CSGP
+2024-10-01 07:47:27,430 - INFO - Stock data saved for COST
+2024-10-01 07:47:27,650 - INFO - Stock data saved for CTRA
+2024-10-01 07:47:27,811 - INFO - Stock data saved for CRWD
+2024-10-01 07:47:27,996 - INFO - Stock data saved for CCI
+2024-10-01 07:47:28,215 - INFO - Stock data saved for CSX
+2024-10-01 07:47:28,433 - INFO - Stock data saved for CMI
+2024-10-01 07:47:28,660 - INFO - Stock data saved for CVS
+2024-10-01 07:47:28,863 - INFO - Stock data saved for DHR
+2024-10-01 07:47:29,070 - INFO - Stock data saved for DRI
+2024-10-01 07:47:29,236 - INFO - Stock data saved for DVA
+2024-10-01 07:47:29,409 - INFO - Stock data saved for DAY
+2024-10-01 07:47:29,574 - INFO - Stock data saved for DECK
+2024-10-01 07:47:29,833 - INFO - Stock data saved for DE
+2024-10-01 07:47:30,269 - INFO - Stock data saved for DELL
+2024-10-01 07:47:30,449 - INFO - Stock data saved for DAL
+2024-10-01 07:47:30,661 - INFO - Stock data saved for DVN
+2024-10-01 07:47:30,825 - INFO - Stock data saved for DXCM
+2024-10-01 07:47:30,999 - INFO - Stock data saved for FANG
+2024-10-01 07:47:31,186 - INFO - Stock data saved for DLR
+2024-10-01 07:47:31,377 - INFO - Stock data saved for DFS
+2024-10-01 07:47:31,559 - INFO - Stock data saved for DG
+2024-10-01 07:47:31,724 - INFO - Stock data saved for DLTR
+2024-10-01 07:47:31,937 - INFO - Stock data saved for D
+2024-10-01 07:47:32,130 - INFO - Stock data saved for DPZ
+2024-10-01 07:47:32,345 - INFO - Stock data saved for DOV
+2024-10-01 07:47:32,515 - INFO - Stock data saved for DOW
+2024-10-01 07:47:32,729 - INFO - Stock data saved for DHI
+2024-10-01 07:47:32,965 - INFO - Stock data saved for DTE
+2024-10-01 07:47:33,183 - INFO - Stock data saved for DUK
+2024-10-01 07:47:33,423 - INFO - Stock data saved for DD
+2024-10-01 07:47:33,622 - INFO - Stock data saved for EMN
+2024-10-01 07:47:33,858 - INFO - Stock data saved for ETN
+2024-10-01 07:47:34,032 - INFO - Stock data saved for EBAY
+2024-10-01 07:47:34,253 - INFO - Stock data saved for ECL
+2024-10-01 07:47:34,469 - INFO - Stock data saved for EIX
+2024-10-01 07:47:34,634 - INFO - Stock data saved for EW
+2024-10-01 07:47:34,815 - INFO - Stock data saved for EA
+2024-10-01 07:47:35,007 - INFO - Stock data saved for ELV
+2024-10-01 07:47:35,245 - INFO - Stock data saved for EMR
+2024-10-01 07:47:35,417 - INFO - Stock data saved for ENPH
+2024-10-01 07:47:35,654 - INFO - Stock data saved for ETR
+2024-10-01 07:47:35,861 - INFO - Stock data saved for EOG
+2024-10-01 07:47:36,024 - INFO - Stock data saved for EPAM
+2024-10-01 07:47:36,240 - INFO - Stock data saved for EQT
+2024-10-01 07:47:36,450 - INFO - Stock data saved for EFX
+2024-10-01 07:47:36,627 - INFO - Stock data saved for EQIX
+2024-10-01 07:47:36,835 - INFO - Stock data saved for EQR
+2024-10-01 07:47:37,226 - INFO - Stock data saved for ERIE
+2024-10-01 07:47:37,419 - INFO - Stock data saved for ESS
+2024-10-01 07:47:37,623 - INFO - Stock data saved for EL
+2024-10-01 07:47:37,826 - INFO - Stock data saved for EG
+2024-10-01 07:47:38,086 - INFO - Stock data saved for EVRG
+2024-10-01 07:47:38,319 - INFO - Stock data saved for ES
+2024-10-01 07:47:38,558 - INFO - Stock data saved for EXC
+2024-10-01 07:47:38,732 - INFO - Stock data saved for EXPE
+2024-10-01 07:47:38,923 - INFO - Stock data saved for EXPD
+2024-10-01 07:47:39,119 - INFO - Stock data saved for EXR
+2024-10-01 07:47:39,384 - INFO - Stock data saved for XOM
+2024-10-01 07:47:39,549 - INFO - Stock data saved for FFIV
+2024-10-01 07:47:39,745 - INFO - Stock data saved for FDS
+2024-10-01 07:47:39,943 - INFO - Stock data saved for FICO
+2024-10-01 07:47:40,164 - INFO - Stock data saved for FAST
+2024-10-01 07:47:40,375 - INFO - Stock data saved for FRT
+2024-10-01 07:47:40,576 - INFO - Stock data saved for FDX
+2024-10-01 07:47:40,763 - INFO - Stock data saved for FIS
+2024-10-01 07:47:40,982 - INFO - Stock data saved for FITB
+2024-10-01 07:47:41,152 - INFO - Stock data saved for FSLR
+2024-10-01 07:47:41,349 - INFO - Stock data saved for FE
+2024-10-01 07:47:41,512 - INFO - Stock data saved for FI
+2024-10-01 07:47:41,716 - INFO - Stock data saved for FMC
+2024-10-01 07:47:41,932 - INFO - Stock data saved for F
+2024-10-01 07:47:42,095 - INFO - Stock data saved for FTNT
+2024-10-01 07:47:42,264 - INFO - Stock data saved for FTV
+2024-10-01 07:47:42,449 - INFO - Stock data saved for FOXA
+2024-10-01 07:47:42,617 - INFO - Stock data saved for FOX
+2024-10-01 07:47:42,825 - INFO - Stock data saved for BEN
+2024-10-01 07:47:43,029 - INFO - Stock data saved for FCX
+2024-10-01 07:47:43,221 - INFO - Stock data saved for GRMN
+2024-10-01 07:47:43,382 - INFO - Stock data saved for IT
+2024-10-01 07:47:43,617 - INFO - Stock data saved for GE
+2024-10-01 07:47:43,786 - INFO - Stock data saved for GEHC
+2024-10-01 07:47:43,950 - INFO - Stock data saved for GEV
+2024-10-01 07:47:44,124 - INFO - Stock data saved for GEN
+2024-10-01 07:47:44,289 - INFO - Stock data saved for GNRC
+2024-10-01 07:47:44,534 - INFO - Stock data saved for GD
+2024-10-01 07:47:44,802 - INFO - Stock data saved for GIS
+2024-10-01 07:47:44,980 - INFO - Stock data saved for GM
+2024-10-01 07:47:45,193 - INFO - Stock data saved for GPC
+2024-10-01 07:47:45,371 - INFO - Stock data saved for GILD
+2024-10-01 07:47:45,557 - INFO - Stock data saved for GPN
+2024-10-01 07:47:45,759 - INFO - Stock data saved for GL
+2024-10-01 07:47:45,928 - INFO - Stock data saved for GDDY
+2024-10-01 07:47:46,142 - INFO - Stock data saved for GS
+2024-10-01 07:47:46,372 - INFO - Stock data saved for HAL
+2024-10-01 07:47:46,569 - INFO - Stock data saved for HIG
+2024-10-01 07:47:46,775 - INFO - Stock data saved for HAS
+2024-10-01 07:47:46,959 - INFO - Stock data saved for HCA
+2024-10-01 07:47:47,181 - INFO - Stock data saved for DOC
+2024-10-01 07:47:47,345 - INFO - Stock data saved for HSIC
+2024-10-01 07:47:47,552 - INFO - Stock data saved for HSY
+2024-10-01 07:47:47,772 - INFO - Stock data saved for HES
+2024-10-01 07:47:47,947 - INFO - Stock data saved for HPE
+2024-10-01 07:47:48,122 - INFO - Stock data saved for HLT
+2024-10-01 07:47:48,287 - INFO - Stock data saved for HOLX
+2024-10-01 07:47:48,496 - INFO - Stock data saved for HD
+2024-10-01 07:47:48,760 - INFO - Stock data saved for HON
+2024-10-01 07:47:48,969 - INFO - Stock data saved for HRL
+2024-10-01 07:47:49,194 - INFO - Stock data saved for HST
+2024-10-01 07:47:49,414 - INFO - Stock data saved for HWM
+2024-10-01 07:47:49,669 - INFO - Stock data saved for HPQ
+2024-10-01 07:47:49,878 - INFO - Stock data saved for HUBB
+2024-10-01 07:47:50,093 - INFO - Stock data saved for HUM
+2024-10-01 07:47:50,314 - INFO - Stock data saved for HBAN
+2024-10-01 07:47:50,494 - INFO - Stock data saved for HII
+2024-10-01 07:47:50,737 - INFO - Stock data saved for IBM
+2024-10-01 07:47:50,947 - INFO - Stock data saved for IEX
+2024-10-01 07:47:51,119 - INFO - Stock data saved for IDXX
+2024-10-01 07:47:51,333 - INFO - Stock data saved for ITW
+2024-10-01 07:47:51,503 - INFO - Stock data saved for INCY
+2024-10-01 07:47:51,673 - INFO - Stock data saved for IR
+2024-10-01 07:47:51,843 - INFO - Stock data saved for PODD
+2024-10-01 07:47:52,047 - INFO - Stock data saved for INTC
+2024-10-01 07:47:52,228 - INFO - Stock data saved for ICE
+2024-10-01 07:47:52,464 - INFO - Stock data saved for IFF
+2024-10-01 07:47:52,720 - INFO - Stock data saved for IP
+2024-10-01 07:47:52,926 - INFO - Stock data saved for IPG
+2024-10-01 07:47:53,100 - INFO - Stock data saved for INTU
+2024-10-01 07:47:53,264 - INFO - Stock data saved for ISRG
+2024-10-01 07:47:53,455 - INFO - Stock data saved for IVZ
+2024-10-01 07:47:53,639 - INFO - Stock data saved for INVH
+2024-10-01 07:47:53,805 - INFO - Stock data saved for IQV
+2024-10-01 07:47:53,987 - INFO - Stock data saved for IRM
+2024-10-01 07:47:54,213 - INFO - Stock data saved for JBHT
+2024-10-01 07:47:54,393 - INFO - Stock data saved for JBL
+2024-10-01 07:47:54,609 - INFO - Stock data saved for JKHY
+2024-10-01 07:47:54,782 - INFO - Stock data saved for J
+2024-10-01 07:47:55,044 - INFO - Stock data saved for JNJ
+2024-10-01 07:47:55,254 - INFO - Stock data saved for JCI
+2024-10-01 07:47:55,466 - INFO - Stock data saved for JPM
+2024-10-01 07:47:55,641 - INFO - Stock data saved for JNPR
+2024-10-01 07:47:55,875 - INFO - Stock data saved for K
+2024-10-01 07:47:56,039 - INFO - Stock data saved for KVUE
+2024-10-01 07:47:56,220 - INFO - Stock data saved for KDP
+2024-10-01 07:47:56,469 - INFO - Stock data saved for KEY
+2024-10-01 07:47:56,634 - INFO - Stock data saved for KEYS
+2024-10-01 07:47:56,839 - INFO - Stock data saved for KMB
+2024-10-01 07:47:57,053 - INFO - Stock data saved for KIM
+2024-10-01 07:47:57,237 - INFO - Stock data saved for KMI
+2024-10-01 07:47:57,429 - INFO - Stock data saved for KKR
+2024-10-01 07:47:57,609 - INFO - Stock data saved for KLAC
+2024-10-01 07:47:57,781 - INFO - Stock data saved for KHC
+2024-10-01 07:47:58,011 - INFO - Stock data saved for KR
+2024-10-01 07:47:58,230 - INFO - Stock data saved for LHX
+2024-10-01 07:47:58,430 - INFO - Stock data saved for LH
+2024-10-01 07:47:58,602 - INFO - Stock data saved for LRCX
+2024-10-01 07:47:58,779 - INFO - Stock data saved for LW
+2024-10-01 07:47:58,960 - INFO - Stock data saved for LVS
+2024-10-01 07:47:59,144 - INFO - Stock data saved for LDOS
+2024-10-01 07:47:59,359 - INFO - Stock data saved for LEN
+2024-10-01 07:47:59,590 - INFO - Stock data saved for LLY
+2024-10-01 07:47:59,800 - INFO - Stock data saved for LIN
+2024-10-01 07:47:59,962 - INFO - Stock data saved for LYV
+2024-10-01 07:48:00,137 - INFO - Stock data saved for LKQ
+2024-10-01 07:48:00,339 - INFO - Stock data saved for LMT
+2024-10-01 07:48:00,549 - INFO - Stock data saved for L
+2024-10-01 07:48:00,774 - INFO - Stock data saved for LOW
+2024-10-01 07:48:00,938 - INFO - Stock data saved for LULU
+2024-10-01 07:48:01,118 - INFO - Stock data saved for LYB
+2024-10-01 07:48:01,334 - INFO - Stock data saved for MTB
+2024-10-01 07:48:01,581 - INFO - Stock data saved for MRO
+2024-10-01 07:48:01,764 - INFO - Stock data saved for MPC
+2024-10-01 07:48:01,949 - INFO - Stock data saved for MKTX
+2024-10-01 07:48:02,155 - INFO - Stock data saved for MAR
+2024-10-01 07:48:02,363 - INFO - Stock data saved for MMC
+2024-10-01 07:48:02,568 - INFO - Stock data saved for MLM
+2024-10-01 07:48:02,775 - INFO - Stock data saved for MAS
+2024-10-01 07:48:02,991 - INFO - Stock data saved for MA
+2024-10-01 07:48:03,168 - INFO - Stock data saved for MTCH
+2024-10-01 07:48:03,374 - INFO - Stock data saved for MKC
+2024-10-01 07:48:03,598 - INFO - Stock data saved for MCD
+2024-10-01 07:48:03,801 - INFO - Stock data saved for MCK
+2024-10-01 07:48:04,012 - INFO - Stock data saved for MDT
+2024-10-01 07:48:04,276 - INFO - Stock data saved for MRK
+2024-10-01 07:48:04,442 - INFO - Stock data saved for META
+2024-10-01 07:48:04,638 - INFO - Stock data saved for MET
+2024-10-01 07:48:04,803 - INFO - Stock data saved for MTD
+2024-10-01 07:48:05,003 - INFO - Stock data saved for MGM
+2024-10-01 07:48:05,197 - INFO - Stock data saved for MCHP
+2024-10-01 07:48:05,403 - INFO - Stock data saved for MU
+2024-10-01 07:48:05,588 - INFO - Stock data saved for MSFT
+2024-10-01 07:48:05,792 - INFO - Stock data saved for MAA
+2024-10-01 07:48:05,955 - INFO - Stock data saved for MRNA
+2024-10-01 07:48:06,127 - INFO - Stock data saved for MHK
+2024-10-01 07:48:06,294 - INFO - Stock data saved for MOH
+2024-10-01 07:48:06,496 - INFO - Stock data saved for TAP
+2024-10-01 07:48:06,684 - INFO - Stock data saved for MDLZ
+2024-10-01 07:48:06,867 - INFO - Stock data saved for MPWR
+2024-10-01 07:48:07,030 - INFO - Stock data saved for MNST
+2024-10-01 07:48:07,233 - INFO - Stock data saved for MCO
+2024-10-01 07:48:07,439 - INFO - Stock data saved for MS
+2024-10-01 07:48:07,670 - INFO - Stock data saved for MOS
+2024-10-01 07:48:07,902 - INFO - Stock data saved for MSI
+2024-10-01 07:48:08,188 - INFO - Stock data saved for MSCI
+2024-10-01 07:48:08,366 - INFO - Stock data saved for NDAQ
+2024-10-01 07:48:08,540 - INFO - Stock data saved for NTAP
+2024-10-01 07:48:08,707 - INFO - Stock data saved for NFLX
+2024-10-01 07:48:08,918 - INFO - Stock data saved for NEM
+2024-10-01 07:48:09,091 - INFO - Stock data saved for NWSA
+2024-10-01 07:48:09,267 - INFO - Stock data saved for NWS
+2024-10-01 07:48:09,496 - INFO - Stock data saved for NEE
+2024-10-01 07:48:09,706 - INFO - Stock data saved for NKE
+2024-10-01 07:48:09,926 - INFO - Stock data saved for NI
+2024-10-01 07:48:10,149 - INFO - Stock data saved for NDSN
+2024-10-01 07:48:10,372 - INFO - Stock data saved for NSC
+2024-10-01 07:48:10,601 - INFO - Stock data saved for NTRS
+2024-10-01 07:48:10,823 - INFO - Stock data saved for NOC
+2024-10-01 07:48:10,986 - INFO - Stock data saved for NCLH
+2024-10-01 07:48:11,159 - INFO - Stock data saved for NRG
+2024-10-01 07:48:11,379 - INFO - Stock data saved for NUE
+2024-10-01 07:48:11,557 - INFO - Stock data saved for NVDA
+2024-10-01 07:48:11,734 - INFO - Stock data saved for NVR
+2024-10-01 07:48:11,905 - INFO - Stock data saved for NXPI
+2024-10-01 07:48:12,070 - INFO - Stock data saved for ORLY
+2024-10-01 07:48:12,390 - INFO - Stock data saved for OXY
+2024-10-01 07:48:12,566 - INFO - Stock data saved for ODFL
+2024-10-01 07:48:12,780 - INFO - Stock data saved for OMC
+2024-10-01 07:48:12,946 - INFO - Stock data saved for ON
+2024-10-01 07:48:13,165 - INFO - Stock data saved for OKE
+2024-10-01 07:48:13,355 - INFO - Stock data saved for ORCL
+2024-10-01 07:48:13,525 - INFO - Stock data saved for OTIS
+2024-10-01 07:48:13,740 - INFO - Stock data saved for PCAR
+2024-10-01 07:48:13,935 - INFO - Stock data saved for PKG
+2024-10-01 07:48:14,249 - INFO - Stock data saved for PLTR
+2024-10-01 07:48:14,417 - INFO - Stock data saved for PANW
+2024-10-01 07:48:14,611 - INFO - Stock data saved for PARA
+2024-10-01 07:48:14,828 - INFO - Stock data saved for PH
+2024-10-01 07:48:15,043 - INFO - Stock data saved for PAYX
+2024-10-01 07:48:15,205 - INFO - Stock data saved for PAYC
+2024-10-01 07:48:15,372 - INFO - Stock data saved for PYPL
+2024-10-01 07:48:15,590 - INFO - Stock data saved for PNR
+2024-10-01 07:48:15,832 - INFO - Stock data saved for PEP
+2024-10-01 07:48:16,103 - INFO - Stock data saved for PFE
+2024-10-01 07:48:16,341 - INFO - Stock data saved for PCG
+2024-10-01 07:48:16,537 - INFO - Stock data saved for PM
+2024-10-01 07:48:16,738 - INFO - Stock data saved for PSX
+2024-10-01 07:48:16,961 - INFO - Stock data saved for PNW
+2024-10-01 07:48:17,173 - INFO - Stock data saved for PNC
+2024-10-01 07:48:17,367 - INFO - Stock data saved for POOL
+2024-10-01 07:48:17,591 - INFO - Stock data saved for PPG
+2024-10-01 07:48:17,806 - INFO - Stock data saved for PPL
+2024-10-01 07:48:18,004 - INFO - Stock data saved for PFG
+2024-10-01 07:48:18,253 - INFO - Stock data saved for PG
+2024-10-01 07:48:18,467 - INFO - Stock data saved for PGR
+2024-10-01 07:48:18,665 - INFO - Stock data saved for PLD
+2024-10-01 07:48:18,852 - INFO - Stock data saved for PRU
+2024-10-01 07:48:19,079 - INFO - Stock data saved for PEG
+2024-10-01 07:48:19,299 - INFO - Stock data saved for PTC
+2024-10-01 07:48:19,510 - INFO - Stock data saved for PSA
+2024-10-01 07:48:19,730 - INFO - Stock data saved for PHM
+2024-10-01 07:48:19,893 - INFO - Stock data saved for QRVO
+2024-10-01 07:48:20,064 - INFO - Stock data saved for PWR
+2024-10-01 07:48:20,265 - INFO - Stock data saved for QCOM
+2024-10-01 07:48:20,489 - INFO - Stock data saved for DGX
+2024-10-01 07:48:20,685 - INFO - Stock data saved for RL
+2024-10-01 07:48:20,899 - INFO - Stock data saved for RJF
+2024-10-01 07:48:21,146 - INFO - Stock data saved for RTX
+2024-10-01 07:48:21,354 - INFO - Stock data saved for O
+2024-10-01 07:48:21,561 - INFO - Stock data saved for REG
+2024-10-01 07:48:21,735 - INFO - Stock data saved for REGN
+2024-10-01 07:48:21,957 - INFO - Stock data saved for RF
+2024-10-01 07:48:22,146 - INFO - Stock data saved for RSG
+2024-10-01 07:48:22,324 - INFO - Stock data saved for RMD
+2024-10-01 07:48:22,539 - INFO - Stock data saved for RVTY
+2024-10-01 07:48:22,769 - INFO - Stock data saved for ROK
+2024-10-01 07:48:22,966 - INFO - Stock data saved for ROL
+2024-10-01 07:48:23,166 - INFO - Stock data saved for ROP
+2024-10-01 07:48:23,383 - INFO - Stock data saved for ROST
+2024-10-01 07:48:23,585 - INFO - Stock data saved for RCL
+2024-10-01 07:48:23,800 - INFO - Stock data saved for SPGI
+2024-10-01 07:48:23,963 - INFO - Stock data saved for CRM
+2024-10-01 07:48:24,148 - INFO - Stock data saved for SBAC
+2024-10-01 07:48:24,381 - INFO - Stock data saved for SLB
+2024-10-01 07:48:24,571 - INFO - Stock data saved for STX
+2024-10-01 07:48:24,774 - INFO - Stock data saved for SRE
+2024-10-01 07:48:24,950 - INFO - Stock data saved for NOW
+2024-10-01 07:48:25,166 - INFO - Stock data saved for SHW
+2024-10-01 07:48:25,357 - INFO - Stock data saved for SPG
+2024-10-01 07:48:25,537 - INFO - Stock data saved for SWKS
+2024-10-01 07:48:25,735 - INFO - Stock data saved for SJM
+2024-10-01 07:48:25,902 - INFO - Stock data saved for SW
+2024-10-01 07:48:26,119 - INFO - Stock data saved for SNA
+2024-10-01 07:48:26,284 - INFO - Stock data saved for SOLV
+2024-10-01 07:48:26,508 - INFO - Stock data saved for SO
+2024-10-01 07:48:26,726 - INFO - Stock data saved for LUV
+2024-10-01 07:48:26,933 - INFO - Stock data saved for SWK
+2024-10-01 07:48:27,120 - INFO - Stock data saved for SBUX
+2024-10-01 07:48:27,324 - INFO - Stock data saved for STT
+2024-10-01 07:48:27,506 - INFO - Stock data saved for STLD
+2024-10-01 07:48:27,791 - INFO - Stock data saved for STE
+2024-10-01 07:48:28,002 - INFO - Stock data saved for SYK
+2024-10-01 07:48:28,163 - INFO - Stock data saved for SMCI
+2024-10-01 07:48:28,342 - INFO - Stock data saved for SYF
+2024-10-01 07:48:28,505 - INFO - Stock data saved for SNPS
+2024-10-01 07:48:28,709 - INFO - Stock data saved for SYY
+2024-10-01 07:48:28,881 - INFO - Stock data saved for TMUS
+2024-10-01 07:48:29,079 - INFO - Stock data saved for TROW
+2024-10-01 07:48:29,241 - INFO - Stock data saved for TTWO
+2024-10-01 07:48:29,425 - INFO - Stock data saved for TPR
+2024-10-01 07:48:29,609 - INFO - Stock data saved for TRGP
+2024-10-01 07:48:29,826 - INFO - Stock data saved for TGT
+2024-10-01 07:48:30,019 - INFO - Stock data saved for TEL
+2024-10-01 07:48:30,182 - INFO - Stock data saved for TDY
+2024-10-01 07:48:30,390 - INFO - Stock data saved for TFX
+2024-10-01 07:48:30,574 - INFO - Stock data saved for TER
+2024-10-01 07:48:30,738 - INFO - Stock data saved for TSLA
+2024-10-01 07:48:30,973 - INFO - Stock data saved for TXN
+2024-10-01 07:48:31,230 - INFO - Stock data saved for TXT
+2024-10-01 07:48:31,421 - INFO - Stock data saved for TMO
+2024-10-01 07:48:31,634 - INFO - Stock data saved for TJX
+2024-10-01 07:48:31,810 - INFO - Stock data saved for TSCO
+2024-10-01 07:48:32,046 - INFO - Stock data saved for TT
+2024-10-01 07:48:32,229 - INFO - Stock data saved for TDG
+2024-10-01 07:48:32,438 - INFO - Stock data saved for TRV
+2024-10-01 07:48:32,600 - INFO - Stock data saved for TRMB
+2024-10-01 07:48:32,816 - INFO - Stock data saved for TFC
+2024-10-01 07:48:32,981 - INFO - Stock data saved for TYL
+2024-10-01 07:48:33,187 - INFO - Stock data saved for TSN
+2024-10-01 07:48:33,406 - INFO - Stock data saved for USB
+2024-10-01 07:48:33,577 - INFO - Stock data saved for UBER
+2024-10-01 07:48:33,793 - INFO - Stock data saved for UDR
+2024-10-01 07:48:33,954 - INFO - Stock data saved for ULTA
+2024-10-01 07:48:34,169 - INFO - Stock data saved for UNP
+2024-10-01 07:48:34,340 - INFO - Stock data saved for UAL
+2024-10-01 07:48:34,555 - INFO - Stock data saved for UPS
+2024-10-01 07:48:34,727 - INFO - Stock data saved for URI
+2024-10-01 07:48:34,922 - INFO - Stock data saved for UNH
+2024-10-01 07:48:35,134 - INFO - Stock data saved for UHS
+2024-10-01 07:48:35,361 - INFO - Stock data saved for VLO
+2024-10-01 07:48:35,557 - INFO - Stock data saved for VTR
+2024-10-01 07:48:35,723 - INFO - Stock data saved for VLTO
+2024-10-01 07:48:35,896 - INFO - Stock data saved for VRSN
+2024-10-01 07:48:36,063 - INFO - Stock data saved for VRSK
+2024-10-01 07:48:36,276 - INFO - Stock data saved for VZ
+2024-10-01 07:48:36,438 - INFO - Stock data saved for VRTX
+2024-10-01 07:48:36,653 - INFO - Stock data saved for VTRS
+2024-10-01 07:48:36,824 - INFO - Stock data saved for VICI
+2024-10-01 07:48:37,006 - INFO - Stock data saved for V
+2024-10-01 07:48:37,180 - INFO - Stock data saved for VST
+2024-10-01 07:48:37,394 - INFO - Stock data saved for VMC
+2024-10-01 07:48:37,609 - INFO - Stock data saved for WRB
+2024-10-01 07:48:37,818 - INFO - Stock data saved for GWW
+2024-10-01 07:48:38,013 - INFO - Stock data saved for WAB
+2024-10-01 07:48:38,234 - INFO - Stock data saved for WBA
+2024-10-01 07:48:38,451 - INFO - Stock data saved for WMT
+2024-10-01 07:48:38,697 - INFO - Stock data saved for DIS
+2024-10-01 07:48:38,859 - INFO - Stock data saved for WBD
+2024-10-01 07:48:39,050 - INFO - Stock data saved for WM
+2024-10-01 07:48:39,212 - INFO - Stock data saved for WAT
+2024-10-01 07:48:39,431 - INFO - Stock data saved for WEC
+2024-10-01 07:48:39,679 - INFO - Stock data saved for WFC
+2024-10-01 07:48:39,890 - INFO - Stock data saved for WELL
+2024-10-01 07:48:40,104 - INFO - Stock data saved for WST
+2024-10-01 07:48:40,278 - INFO - Stock data saved for WDC
+2024-10-01 07:48:40,503 - INFO - Stock data saved for WY
+2024-10-01 07:48:40,731 - INFO - Stock data saved for WMB
+2024-10-01 07:48:40,922 - INFO - Stock data saved for WTW
+2024-10-01 07:48:41,115 - INFO - Stock data saved for WYNN
+2024-10-01 07:48:41,351 - INFO - Stock data saved for XEL
+2024-10-01 07:48:41,537 - INFO - Stock data saved for XYL
+2024-10-01 07:48:41,721 - INFO - Stock data saved for YUM
+2024-10-01 07:48:41,886 - INFO - Stock data saved for ZBRA
+2024-10-01 07:48:42,065 - INFO - Stock data saved for ZBH
+2024-10-01 07:48:42,239 - INFO - Stock data saved for ZTS
+2024-10-01 08:04:44,953 - INFO - Shutting down market data collector
+2024-10-01 08:05:08,441 - INFO - Database tables created or verified.
+2024-10-01 08:05:08,441 - INFO - Starting market data collector
+2024-10-01 08:05:08,442 - INFO - Jobs scheduled at 22:00 and 08:06
+2024-10-01 08:06:00,591 - INFO - Current date: 2024-09-23 17:00:00-04:00, Weekday: 0, Hour: 17
+2024-10-01 08:06:00,591 - INFO - Market status: AFTER_OPEN
+2024-10-01 08:06:00,591 - INFO - Collecting stock prices at 2024-09-23 17:00:00-04:00
+2024-10-01 08:06:00,594 - INFO - Number of symbols retrieved: 503
+2024-10-01 08:06:01,415 - INFO - 0 : MMM Stock data saved
+2024-10-01 08:06:01,627 - INFO - 1 : AOS Stock data saved
+2024-10-01 08:06:01,841 - INFO - 2 : ABT Stock data saved
+2024-10-01 08:06:02,010 - INFO - 3 : ABBV Stock data saved
+2024-10-01 08:06:02,187 - INFO - 4 : ACN Stock data saved
+2024-10-01 08:06:02,362 - INFO - 5 : ADBE Stock data saved
+2024-10-01 08:06:02,515 - INFO - 6 : AMD Stock data saved
+2024-10-01 08:06:02,713 - INFO - 7 : AES Stock data saved
+2024-10-01 08:06:02,956 - INFO - 8 : AFL Stock data saved
+2024-10-01 08:06:03,138 - INFO - 9 : A Stock data saved
+2024-10-01 08:06:03,342 - INFO - 10 : APD Stock data saved
+2024-10-01 08:06:03,506 - INFO - 11 : ABNB Stock data saved
+2024-10-01 08:06:03,663 - INFO - 12 : AKAM Stock data saved
+2024-10-01 08:06:03,851 - INFO - 13 : ALB Stock data saved
+2024-10-01 08:06:04,056 - INFO - 14 : ARE Stock data saved
+2024-10-01 08:06:04,263 - INFO - 15 : ALGN Stock data saved
+2024-10-01 08:06:04,533 - INFO - 16 : ALLE Stock data saved
+2024-10-01 08:06:04,732 - INFO - 17 : LNT Stock data saved
+2024-10-01 08:06:04,939 - INFO - 18 : ALL Stock data saved
+2024-10-01 08:06:05,096 - INFO - 19 : GOOGL Stock data saved
+2024-10-01 08:06:05,257 - INFO - 20 : GOOG Stock data saved
+2024-10-01 08:06:05,485 - INFO - 21 : MO Stock data saved
+2024-10-01 08:06:05,641 - INFO - 22 : AMZN Stock data saved
+2024-10-01 08:06:05,815 - INFO - 23 : AMCR Stock data saved
+2024-10-01 08:06:05,998 - INFO - 24 : AEE Stock data saved
+2024-10-01 08:06:06,234 - INFO - 25 : AEP Stock data saved
+2024-10-01 08:06:06,459 - INFO - 26 : AXP Stock data saved
+2024-10-01 08:06:06,664 - INFO - 27 : AIG Stock data saved
+2024-10-01 08:06:06,838 - INFO - 28 : AMT Stock data saved
+2024-10-01 08:06:07,021 - INFO - 29 : AWK Stock data saved
+2024-10-01 08:06:07,203 - INFO - 30 : AMP Stock data saved
+2024-10-01 08:06:07,417 - INFO - 31 : AME Stock data saved
+2024-10-01 08:06:07,585 - INFO - 32 : AMGN Stock data saved
+2024-10-01 08:06:07,765 - INFO - 33 : APH Stock data saved
+2024-10-01 08:06:07,955 - INFO - 34 : ADI Stock data saved
+2024-10-01 08:06:08,118 - INFO - 35 : ANSS Stock data saved
+2024-10-01 08:06:08,322 - INFO - 36 : AON Stock data saved
+2024-10-01 08:06:08,521 - INFO - 37 : APA Stock data saved
+2024-10-01 08:06:08,717 - INFO - 38 : AAPL Stock data saved
+2024-10-01 08:06:08,901 - INFO - 39 : AMAT Stock data saved
+2024-10-01 08:06:09,067 - INFO - 40 : APTV Stock data saved
+2024-10-01 08:06:09,233 - INFO - 41 : ACGL Stock data saved
+2024-10-01 08:06:09,449 - INFO - 42 : ADM Stock data saved
+2024-10-01 08:06:09,614 - INFO - 43 : ANET Stock data saved
+2024-10-01 08:06:09,823 - INFO - 44 : AJG Stock data saved
+2024-10-01 08:06:10,006 - INFO - 45 : AIZ Stock data saved
+2024-10-01 08:06:10,210 - INFO - 46 : T Stock data saved
+2024-10-01 08:06:10,416 - INFO - 47 : ATO Stock data saved
+2024-10-01 08:06:10,603 - INFO - 48 : ADSK Stock data saved
+2024-10-01 08:06:10,829 - INFO - 49 : ADP Stock data saved
+2024-10-01 08:06:10,989 - INFO - 50 : AZO Stock data saved
+2024-10-01 08:06:11,185 - INFO - 51 : AVB Stock data saved
+2024-10-01 08:06:11,420 - INFO - 52 : AVY Stock data saved
+2024-10-01 08:06:11,576 - INFO - 53 : AXON Stock data saved
+2024-10-01 08:06:11,779 - INFO - 54 : BKR Stock data saved
+2024-10-01 08:06:11,974 - INFO - 55 : BALL Stock data saved
+2024-10-01 08:06:12,178 - INFO - 56 : BAC Stock data saved
+2024-10-01 08:06:12,368 - INFO - 57 : BK Stock data saved
+2024-10-01 08:06:12,585 - INFO - 58 : BBWI Stock data saved
+2024-10-01 08:06:12,799 - INFO - 59 : BAX Stock data saved
+2024-10-01 08:06:13,027 - INFO - 60 : BDX Stock data saved
+2024-10-01 08:06:13,185 - INFO - 61 : BRK-B Stock data saved
+2024-10-01 08:06:13,378 - INFO - 62 : BBY Stock data saved
+2024-10-01 08:06:13,560 - INFO - 63 : TECH Stock data saved
+2024-10-01 08:06:13,721 - INFO - 64 : BIIB Stock data saved
+2024-10-01 08:06:13,910 - INFO - 65 : BLK Stock data saved
+2024-10-01 08:06:14,187 - INFO - 66 : BX Stock data saved
+2024-10-01 08:06:14,425 - INFO - 67 : BA Stock data saved
+2024-10-01 08:06:14,588 - INFO - 68 : BKNG Stock data saved
+2024-10-01 08:06:14,779 - INFO - 69 : BWA Stock data saved
+2024-10-01 08:06:14,936 - INFO - 70 : BSX Stock data saved
+2024-10-01 08:06:15,162 - INFO - 71 : BMY Stock data saved
+2024-10-01 08:06:15,334 - INFO - 72 : AVGO Stock data saved
+2024-10-01 08:06:15,511 - INFO - 73 : BR Stock data saved
+2024-10-01 08:06:15,713 - INFO - 74 : BRO Stock data saved
+2024-10-01 08:06:15,908 - INFO - 75 : BF-B Stock data saved
+2024-10-01 08:06:16,071 - INFO - 76 : BLDR Stock data saved
+2024-10-01 08:06:16,264 - INFO - 77 : BG Stock data saved
+2024-10-01 08:06:16,459 - INFO - 78 : BXP Stock data saved
+2024-10-01 08:06:16,647 - INFO - 79 : CHRW Stock data saved
+2024-10-01 08:06:16,803 - INFO - 80 : CDNS Stock data saved
+2024-10-01 08:06:16,969 - INFO - 81 : CZR Stock data saved
+2024-10-01 08:06:17,172 - INFO - 82 : CPT Stock data saved
+2024-10-01 08:06:17,389 - INFO - 83 : CPB Stock data saved
+2024-10-01 08:06:17,569 - INFO - 84 : COF Stock data saved
+2024-10-01 08:06:17,795 - INFO - 85 : CAH Stock data saved
+2024-10-01 08:06:17,961 - INFO - 86 : KMX Stock data saved
+2024-10-01 08:06:18,148 - INFO - 87 : CCL Stock data saved
+2024-10-01 08:06:18,312 - INFO - 88 : CARR Stock data saved
+2024-10-01 08:06:18,481 - INFO - 89 : CTLT Stock data saved
+2024-10-01 08:06:18,729 - INFO - 90 : CAT Stock data saved
+2024-10-01 08:06:18,906 - INFO - 91 : CBOE Stock data saved
+2024-10-01 08:06:19,064 - INFO - 92 : CBRE Stock data saved
+2024-10-01 08:06:19,233 - INFO - 93 : CDW Stock data saved
+2024-10-01 08:06:19,414 - INFO - 94 : CE Stock data saved
+2024-10-01 08:06:19,600 - INFO - 95 : COR Stock data saved
+2024-10-01 08:06:19,759 - INFO - 96 : CNC Stock data saved
+2024-10-01 08:06:20,027 - INFO - 97 : CNP Stock data saved
+2024-10-01 08:06:20,210 - INFO - 98 : CF Stock data saved
+2024-10-01 08:06:20,370 - INFO - 99 : CRL Stock data saved
+2024-10-01 08:06:20,563 - INFO - 100 : SCHW Stock data saved
+2024-10-01 08:06:20,741 - INFO - 101 : CHTR Stock data saved
+2024-10-01 08:06:20,965 - INFO - 102 : CVX Stock data saved
+2024-10-01 08:06:21,121 - INFO - 103 : CMG Stock data saved
+2024-10-01 08:06:21,316 - INFO - 104 : CB Stock data saved
+2024-10-01 08:06:21,523 - INFO - 105 : CHD Stock data saved
+2024-10-01 08:06:21,754 - INFO - 106 : CI Stock data saved
+2024-10-01 08:06:21,959 - INFO - 107 : CINF Stock data saved
+2024-10-01 08:06:22,272 - INFO - 108 : CTAS Stock data saved
+2024-10-01 08:06:22,446 - INFO - 109 : CSCO Stock data saved
+2024-10-01 08:06:22,640 - INFO - 110 : C Stock data saved
+2024-10-01 08:06:22,805 - INFO - 111 : CFG Stock data saved
+2024-10-01 08:06:23,029 - INFO - 112 : CLX Stock data saved
+2024-10-01 08:06:23,225 - INFO - 113 : CME Stock data saved
+2024-10-01 08:06:23,451 - INFO - 114 : CMS Stock data saved
+2024-10-01 08:06:23,688 - INFO - 115 : KO Stock data saved
+2024-10-01 08:06:23,863 - INFO - 116 : CTSH Stock data saved
+2024-10-01 08:06:24,103 - INFO - 117 : CL Stock data saved
+2024-10-01 08:06:24,316 - INFO - 118 : CMCSA Stock data saved
+2024-10-01 08:06:24,514 - INFO - 119 : CAG Stock data saved
+2024-10-01 08:06:24,727 - INFO - 120 : COP Stock data saved
+2024-10-01 08:06:24,962 - INFO - 121 : ED Stock data saved
+2024-10-01 08:06:25,133 - INFO - 122 : STZ Stock data saved
+2024-10-01 08:06:25,296 - INFO - 123 : CEG Stock data saved
+2024-10-01 08:06:25,500 - INFO - 124 : COO Stock data saved
+2024-10-01 08:06:25,667 - INFO - 125 : CPRT Stock data saved
+2024-10-01 08:06:25,858 - INFO - 126 : GLW Stock data saved
+2024-10-01 08:06:26,019 - INFO - 127 : CPAY Stock data saved
+2024-10-01 08:06:26,182 - INFO - 128 : CTVA Stock data saved
+2024-10-01 08:06:26,353 - INFO - 129 : CSGP Stock data saved
+2024-10-01 08:06:26,537 - INFO - 130 : COST Stock data saved
+2024-10-01 08:06:26,725 - INFO - 131 : CTRA Stock data saved
+2024-10-01 08:06:26,882 - INFO - 132 : CRWD Stock data saved
+2024-10-01 08:06:27,058 - INFO - 133 : CCI Stock data saved
+2024-10-01 08:06:27,261 - INFO - 134 : CSX Stock data saved
+2024-10-01 08:06:27,489 - INFO - 135 : CMI Stock data saved
+2024-10-01 08:06:27,698 - INFO - 136 : CVS Stock data saved
+2024-10-01 08:06:27,898 - INFO - 137 : DHR Stock data saved
+2024-10-01 08:06:28,090 - INFO - 138 : DRI Stock data saved
+2024-10-01 08:06:28,282 - INFO - 139 : DVA Stock data saved
+2024-10-01 08:06:28,445 - INFO - 140 : DAY Stock data saved
+2024-10-01 08:06:28,605 - INFO - 141 : DECK Stock data saved
+2024-10-01 08:06:28,807 - INFO - 142 : DE Stock data saved
+2024-10-01 08:06:28,969 - INFO - 143 : DELL Stock data saved
+2024-10-01 08:06:29,142 - INFO - 144 : DAL Stock data saved
+2024-10-01 08:06:29,327 - INFO - 145 : DVN Stock data saved
+2024-10-01 08:06:29,488 - INFO - 146 : DXCM Stock data saved
+2024-10-01 08:06:29,658 - INFO - 147 : FANG Stock data saved
+2024-10-01 08:06:29,842 - INFO - 148 : DLR Stock data saved
+2024-10-01 08:06:30,023 - INFO - 149 : DFS Stock data saved
+2024-10-01 08:06:30,193 - INFO - 150 : DG Stock data saved
+2024-10-01 08:06:30,352 - INFO - 151 : DLTR Stock data saved
+2024-10-01 08:06:30,543 - INFO - 152 : D Stock data saved
+2024-10-01 08:06:30,716 - INFO - 153 : DPZ Stock data saved
+2024-10-01 08:06:30,931 - INFO - 154 : DOV Stock data saved
+2024-10-01 08:06:31,092 - INFO - 155 : DOW Stock data saved
+2024-10-01 08:06:31,295 - INFO - 156 : DHI Stock data saved
+2024-10-01 08:06:31,531 - INFO - 157 : DTE Stock data saved
+2024-10-01 08:06:31,723 - INFO - 158 : DUK Stock data saved
+2024-10-01 08:06:31,929 - INFO - 159 : DD Stock data saved
+2024-10-01 08:06:32,123 - INFO - 160 : EMN Stock data saved
+2024-10-01 08:06:32,370 - INFO - 161 : ETN Stock data saved
+2024-10-01 08:06:32,545 - INFO - 162 : EBAY Stock data saved
+2024-10-01 08:06:32,747 - INFO - 163 : ECL Stock data saved
+2024-10-01 08:06:32,961 - INFO - 164 : EIX Stock data saved
+2024-10-01 08:06:33,116 - INFO - 165 : EW Stock data saved
+2024-10-01 08:06:33,278 - INFO - 166 : EA Stock data saved
+2024-10-01 08:06:33,453 - INFO - 167 : ELV Stock data saved
+2024-10-01 08:06:33,690 - INFO - 168 : EMR Stock data saved
+2024-10-01 08:06:33,855 - INFO - 169 : ENPH Stock data saved
+2024-10-01 08:06:34,068 - INFO - 170 : ETR Stock data saved
+2024-10-01 08:06:34,256 - INFO - 171 : EOG Stock data saved
+2024-10-01 08:06:34,415 - INFO - 172 : EPAM Stock data saved
+2024-10-01 08:06:34,619 - INFO - 173 : EQT Stock data saved
+2024-10-01 08:06:34,824 - INFO - 174 : EFX Stock data saved
+2024-10-01 08:06:35,090 - INFO - 175 : EQIX Stock data saved
+2024-10-01 08:06:35,285 - INFO - 176 : EQR Stock data saved
+2024-10-01 08:06:35,479 - INFO - 177 : ERIE Stock data saved
+2024-10-01 08:06:35,673 - INFO - 178 : ESS Stock data saved
+2024-10-01 08:06:35,871 - INFO - 179 : EL Stock data saved
+2024-10-01 08:06:36,061 - INFO - 180 : EG Stock data saved
+2024-10-01 08:06:36,286 - INFO - 181 : EVRG Stock data saved
+2024-10-01 08:06:36,525 - INFO - 182 : ES Stock data saved
+2024-10-01 08:06:36,741 - INFO - 183 : EXC Stock data saved
+2024-10-01 08:06:36,915 - INFO - 184 : EXPE Stock data saved
+2024-10-01 08:06:37,106 - INFO - 185 : EXPD Stock data saved
+2024-10-01 08:06:37,284 - INFO - 186 : EXR Stock data saved
+2024-10-01 08:06:37,526 - INFO - 187 : XOM Stock data saved
+2024-10-01 08:06:37,688 - INFO - 188 : FFIV Stock data saved
+2024-10-01 08:06:37,879 - INFO - 189 : FDS Stock data saved
+2024-10-01 08:06:38,073 - INFO - 190 : FICO Stock data saved
+2024-10-01 08:06:38,273 - INFO - 191 : FAST Stock data saved
+2024-10-01 08:06:38,525 - INFO - 192 : FRT Stock data saved
+2024-10-01 08:06:38,708 - INFO - 193 : FDX Stock data saved
+2024-10-01 08:06:38,891 - INFO - 194 : FIS Stock data saved
+2024-10-01 08:06:39,100 - INFO - 195 : FITB Stock data saved
+2024-10-01 08:06:39,259 - INFO - 196 : FSLR Stock data saved
+2024-10-01 08:06:39,463 - INFO - 197 : FE Stock data saved
+2024-10-01 08:06:39,621 - INFO - 198 : FI Stock data saved
+2024-10-01 08:06:39,817 - INFO - 199 : FMC Stock data saved
+2024-10-01 08:06:40,019 - INFO - 200 : F Stock data saved
+2024-10-01 08:06:40,175 - INFO - 201 : FTNT Stock data saved
+2024-10-01 08:06:40,351 - INFO - 202 : FTV Stock data saved
+2024-10-01 08:06:40,523 - INFO - 203 : FOXA Stock data saved
+2024-10-01 08:06:40,688 - INFO - 204 : FOX Stock data saved
+2024-10-01 08:06:40,889 - INFO - 205 : BEN Stock data saved
+2024-10-01 08:06:41,078 - INFO - 206 : FCX Stock data saved
+2024-10-01 08:06:41,260 - INFO - 207 : GRMN Stock data saved
+2024-10-01 08:06:41,415 - INFO - 208 : IT Stock data saved
+2024-10-01 08:06:41,669 - INFO - 209 : GE Stock data saved
+2024-10-01 08:06:41,835 - INFO - 210 : GEHC Stock data saved
+2024-10-01 08:06:41,994 - INFO - 211 : GEV Stock data saved
+2024-10-01 08:06:42,168 - INFO - 212 : GEN Stock data saved
+2024-10-01 08:06:42,336 - INFO - 213 : GNRC Stock data saved
+2024-10-01 08:06:42,558 - INFO - 214 : GD Stock data saved
+2024-10-01 08:06:42,769 - INFO - 215 : GIS Stock data saved
+2024-10-01 08:06:42,938 - INFO - 216 : GM Stock data saved
+2024-10-01 08:06:43,168 - INFO - 217 : GPC Stock data saved
+2024-10-01 08:06:43,342 - INFO - 218 : GILD Stock data saved
+2024-10-01 08:06:43,531 - INFO - 219 : GPN Stock data saved
+2024-10-01 08:06:43,737 - INFO - 220 : GL Stock data saved
+2024-10-01 08:06:43,892 - INFO - 221 : GDDY Stock data saved
+2024-10-01 08:06:44,090 - INFO - 222 : GS Stock data saved
+2024-10-01 08:06:44,334 - INFO - 223 : HAL Stock data saved
+2024-10-01 08:06:44,531 - INFO - 224 : HIG Stock data saved
+2024-10-01 08:06:44,721 - INFO - 225 : HAS Stock data saved
+2024-10-01 08:06:44,896 - INFO - 226 : HCA Stock data saved
+2024-10-01 08:06:45,105 - INFO - 227 : DOC Stock data saved
+2024-10-01 08:06:45,260 - INFO - 228 : HSIC Stock data saved
+2024-10-01 08:06:45,459 - INFO - 229 : HSY Stock data saved
+2024-10-01 08:06:45,672 - INFO - 230 : HES Stock data saved
+2024-10-01 08:06:45,835 - INFO - 231 : HPE Stock data saved
+2024-10-01 08:06:46,002 - INFO - 232 : HLT Stock data saved
+2024-10-01 08:06:46,167 - INFO - 233 : HOLX Stock data saved
+2024-10-01 08:06:46,376 - INFO - 234 : HD Stock data saved
+2024-10-01 08:06:46,597 - INFO - 235 : HON Stock data saved
+2024-10-01 08:06:46,817 - INFO - 236 : HRL Stock data saved
+2024-10-01 08:06:47,016 - INFO - 237 : HST Stock data saved
+2024-10-01 08:06:47,216 - INFO - 238 : HWM Stock data saved
+2024-10-01 08:06:47,451 - INFO - 239 : HPQ Stock data saved
+2024-10-01 08:06:47,660 - INFO - 240 : HUBB Stock data saved
+2024-10-01 08:06:47,862 - INFO - 241 : HUM Stock data saved
+2024-10-01 08:06:48,076 - INFO - 242 : HBAN Stock data saved
+2024-10-01 08:06:48,254 - INFO - 243 : HII Stock data saved
+2024-10-01 08:06:48,484 - INFO - 244 : IBM Stock data saved
+2024-10-01 08:06:48,681 - INFO - 245 : IEX Stock data saved
+2024-10-01 08:06:48,839 - INFO - 246 : IDXX Stock data saved
+2024-10-01 08:06:49,046 - INFO - 247 : ITW Stock data saved
+2024-10-01 08:06:49,203 - INFO - 248 : INCY Stock data saved
+2024-10-01 08:06:49,365 - INFO - 249 : IR Stock data saved
+2024-10-01 08:06:49,521 - INFO - 250 : PODD Stock data saved
+2024-10-01 08:06:49,724 - INFO - 251 : INTC Stock data saved
+2024-10-01 08:06:49,896 - INFO - 252 : ICE Stock data saved
+2024-10-01 08:06:50,114 - INFO - 253 : IFF Stock data saved
+2024-10-01 08:06:50,342 - INFO - 254 : IP Stock data saved
+2024-10-01 08:06:50,541 - INFO - 255 : IPG Stock data saved
+2024-10-01 08:06:50,715 - INFO - 256 : INTU Stock data saved
+2024-10-01 08:06:50,875 - INFO - 257 : ISRG Stock data saved
+2024-10-01 08:06:51,058 - INFO - 258 : IVZ Stock data saved
+2024-10-01 08:06:51,224 - INFO - 259 : INVH Stock data saved
+2024-10-01 08:06:51,385 - INFO - 260 : IQV Stock data saved
+2024-10-01 08:06:51,564 - INFO - 261 : IRM Stock data saved
+2024-10-01 08:06:51,761 - INFO - 262 : JBHT Stock data saved
+2024-10-01 08:06:51,942 - INFO - 263 : JBL Stock data saved
+2024-10-01 08:06:52,139 - INFO - 264 : JKHY Stock data saved
+2024-10-01 08:06:52,316 - INFO - 265 : J Stock data saved
+2024-10-01 08:06:52,564 - INFO - 266 : JNJ Stock data saved
+2024-10-01 08:06:52,769 - INFO - 267 : JCI Stock data saved
+2024-10-01 08:06:52,985 - INFO - 268 : JPM Stock data saved
+2024-10-01 08:06:53,150 - INFO - 269 : JNPR Stock data saved
+2024-10-01 08:06:53,355 - INFO - 270 : K Stock data saved
+2024-10-01 08:06:53,512 - INFO - 271 : KVUE Stock data saved
+2024-10-01 08:06:53,695 - INFO - 272 : KDP Stock data saved
+2024-10-01 08:06:53,892 - INFO - 273 : KEY Stock data saved
+2024-10-01 08:06:54,055 - INFO - 274 : KEYS Stock data saved
+2024-10-01 08:06:54,244 - INFO - 275 : KMB Stock data saved
+2024-10-01 08:06:54,441 - INFO - 276 : KIM Stock data saved
+2024-10-01 08:06:54,617 - INFO - 277 : KMI Stock data saved
+2024-10-01 08:06:54,789 - INFO - 278 : KKR Stock data saved
+2024-10-01 08:06:54,969 - INFO - 279 : KLAC Stock data saved
+2024-10-01 08:06:55,142 - INFO - 280 : KHC Stock data saved
+2024-10-01 08:06:55,356 - INFO - 281 : KR Stock data saved
+2024-10-01 08:06:55,550 - INFO - 282 : LHX Stock data saved
+2024-10-01 08:06:55,738 - INFO - 283 : LH Stock data saved
+2024-10-01 08:06:55,917 - INFO - 284 : LRCX Stock data saved
+2024-10-01 08:06:56,088 - INFO - 285 : LW Stock data saved
+2024-10-01 08:06:56,258 - INFO - 286 : LVS Stock data saved
+2024-10-01 08:06:56,438 - INFO - 287 : LDOS Stock data saved
+2024-10-01 08:06:56,675 - INFO - 288 : LEN Stock data saved
+2024-10-01 08:06:56,890 - INFO - 289 : LLY Stock data saved
+2024-10-01 08:06:57,084 - INFO - 290 : LIN Stock data saved
+2024-10-01 08:06:57,251 - INFO - 291 : LYV Stock data saved
+2024-10-01 08:06:57,413 - INFO - 292 : LKQ Stock data saved
+2024-10-01 08:06:57,631 - INFO - 293 : LMT Stock data saved
+2024-10-01 08:06:57,842 - INFO - 294 : L Stock data saved
+2024-10-01 08:06:58,147 - INFO - 295 : LOW Stock data saved
+2024-10-01 08:06:58,317 - INFO - 296 : LULU Stock data saved
+2024-10-01 08:06:58,487 - INFO - 297 : LYB Stock data saved
+2024-10-01 08:06:58,688 - INFO - 298 : MTB Stock data saved
+2024-10-01 08:06:59,048 - INFO - 299 : MRO Stock data saved
+2024-10-01 08:06:59,245 - INFO - 300 : MPC Stock data saved
+2024-10-01 08:06:59,414 - INFO - 301 : MKTX Stock data saved
+2024-10-01 08:06:59,600 - INFO - 302 : MAR Stock data saved
+2024-10-01 08:06:59,800 - INFO - 303 : MMC Stock data saved
+2024-10-01 08:06:59,995 - INFO - 304 : MLM Stock data saved
+2024-10-01 08:07:00,210 - INFO - 305 : MAS Stock data saved
+2024-10-01 08:07:00,395 - INFO - 306 : MA Stock data saved
+2024-10-01 08:07:00,572 - INFO - 307 : MTCH Stock data saved
+2024-10-01 08:07:00,774 - INFO - 308 : MKC Stock data saved
+2024-10-01 08:07:00,980 - INFO - 309 : MCD Stock data saved
+2024-10-01 08:07:01,182 - INFO - 310 : MCK Stock data saved
+2024-10-01 08:07:01,385 - INFO - 311 : MDT Stock data saved
+2024-10-01 08:07:01,633 - INFO - 312 : MRK Stock data saved
+2024-10-01 08:07:01,798 - INFO - 313 : META Stock data saved
+2024-10-01 08:07:01,986 - INFO - 314 : MET Stock data saved
+2024-10-01 08:07:02,151 - INFO - 315 : MTD Stock data saved
+2024-10-01 08:07:02,336 - INFO - 316 : MGM Stock data saved
+2024-10-01 08:07:02,513 - INFO - 317 : MCHP Stock data saved
+2024-10-01 08:07:02,698 - INFO - 318 : MU Stock data saved
+2024-10-01 08:07:02,875 - INFO - 319 : MSFT Stock data saved
+2024-10-01 08:07:03,054 - INFO - 320 : MAA Stock data saved
+2024-10-01 08:07:03,216 - INFO - 321 : MRNA Stock data saved
+2024-10-01 08:07:03,372 - INFO - 322 : MHK Stock data saved
+2024-10-01 08:07:03,527 - INFO - 323 : MOH Stock data saved
+2024-10-01 08:07:03,729 - INFO - 324 : TAP Stock data saved
+2024-10-01 08:07:03,927 - INFO - 325 : MDLZ Stock data saved
+2024-10-01 08:07:04,096 - INFO - 326 : MPWR Stock data saved
+2024-10-01 08:07:04,253 - INFO - 327 : MNST Stock data saved
+2024-10-01 08:07:04,429 - INFO - 328 : MCO Stock data saved
+2024-10-01 08:07:04,615 - INFO - 329 : MS Stock data saved
+2024-10-01 08:07:04,809 - INFO - 330 : MOS Stock data saved
+2024-10-01 08:07:05,063 - INFO - 331 : MSI Stock data saved
+2024-10-01 08:07:05,227 - INFO - 332 : MSCI Stock data saved
+2024-10-01 08:07:05,393 - INFO - 333 : NDAQ Stock data saved
+2024-10-01 08:07:05,557 - INFO - 334 : NTAP Stock data saved
+2024-10-01 08:07:05,719 - INFO - 335 : NFLX Stock data saved
+2024-10-01 08:07:05,911 - INFO - 336 : NEM Stock data saved
+2024-10-01 08:07:06,086 - INFO - 337 : NWSA Stock data saved
+2024-10-01 08:07:06,250 - INFO - 338 : NWS Stock data saved
+2024-10-01 08:07:06,463 - INFO - 339 : NEE Stock data saved
+2024-10-01 08:07:06,768 - INFO - 340 : NKE Stock data saved
+2024-10-01 08:07:06,970 - INFO - 341 : NI Stock data saved
+2024-10-01 08:07:07,172 - INFO - 342 : NDSN Stock data saved
+2024-10-01 08:07:07,374 - INFO - 343 : NSC Stock data saved
+2024-10-01 08:07:07,562 - INFO - 344 : NTRS Stock data saved
+2024-10-01 08:07:07,761 - INFO - 345 : NOC Stock data saved
+2024-10-01 08:07:07,917 - INFO - 346 : NCLH Stock data saved
+2024-10-01 08:07:08,093 - INFO - 347 : NRG Stock data saved
+2024-10-01 08:07:08,288 - INFO - 348 : NUE Stock data saved
+2024-10-01 08:07:08,457 - INFO - 349 : NVDA Stock data saved
+2024-10-01 08:07:08,618 - INFO - 350 : NVR Stock data saved
+2024-10-01 08:07:08,781 - INFO - 351 : NXPI Stock data saved
+2024-10-01 08:07:08,935 - INFO - 352 : ORLY Stock data saved
+2024-10-01 08:07:09,133 - INFO - 353 : OXY Stock data saved
+2024-10-01 08:07:09,302 - INFO - 354 : ODFL Stock data saved
+2024-10-01 08:07:09,505 - INFO - 355 : OMC Stock data saved
+2024-10-01 08:07:09,667 - INFO - 356 : ON Stock data saved
+2024-10-01 08:07:09,866 - INFO - 357 : OKE Stock data saved
+2024-10-01 08:07:10,043 - INFO - 358 : ORCL Stock data saved
+2024-10-01 08:07:10,207 - INFO - 359 : OTIS Stock data saved
+2024-10-01 08:07:10,406 - INFO - 360 : PCAR Stock data saved
+2024-10-01 08:07:10,588 - INFO - 361 : PKG Stock data saved
+2024-10-01 08:07:10,748 - INFO - 362 : PLTR Stock data saved
+2024-10-01 08:07:10,910 - INFO - 363 : PANW Stock data saved
+2024-10-01 08:07:11,093 - INFO - 364 : PARA Stock data saved
+2024-10-01 08:07:11,308 - INFO - 365 : PH Stock data saved
+2024-10-01 08:07:11,504 - INFO - 366 : PAYX Stock data saved
+2024-10-01 08:07:11,674 - INFO - 367 : PAYC Stock data saved
+2024-10-01 08:07:11,835 - INFO - 368 : PYPL Stock data saved
+2024-10-01 08:07:12,040 - INFO - 369 : PNR Stock data saved
+2024-10-01 08:07:12,264 - INFO - 370 : PEP Stock data saved
+2024-10-01 08:07:12,469 - INFO - 371 : PFE Stock data saved
+2024-10-01 08:07:12,685 - INFO - 372 : PCG Stock data saved
+2024-10-01 08:07:12,862 - INFO - 373 : PM Stock data saved
+2024-10-01 08:07:13,027 - INFO - 374 : PSX Stock data saved
+2024-10-01 08:07:13,246 - INFO - 375 : PNW Stock data saved
+2024-10-01 08:07:13,449 - INFO - 376 : PNC Stock data saved
+2024-10-01 08:07:13,630 - INFO - 377 : POOL Stock data saved
+2024-10-01 08:07:13,829 - INFO - 378 : PPG Stock data saved
+2024-10-01 08:07:14,043 - INFO - 379 : PPL Stock data saved
+2024-10-01 08:07:14,227 - INFO - 380 : PFG Stock data saved
+2024-10-01 08:07:14,447 - INFO - 381 : PG Stock data saved
+2024-10-01 08:07:14,663 - INFO - 382 : PGR Stock data saved
+2024-10-01 08:07:14,845 - INFO - 383 : PLD Stock data saved
+2024-10-01 08:07:15,027 - INFO - 384 : PRU Stock data saved
+2024-10-01 08:07:15,227 - INFO - 385 : PEG Stock data saved
+2024-10-01 08:07:15,392 - INFO - 386 : PTC Stock data saved
+2024-10-01 08:07:15,589 - INFO - 387 : PSA Stock data saved
+2024-10-01 08:07:15,787 - INFO - 388 : PHM Stock data saved
+2024-10-01 08:07:15,944 - INFO - 389 : QRVO Stock data saved
+2024-10-01 08:07:16,108 - INFO - 390 : PWR Stock data saved
+2024-10-01 08:07:16,312 - INFO - 391 : QCOM Stock data saved
+2024-10-01 08:07:16,494 - INFO - 392 : DGX Stock data saved
+2024-10-01 08:07:16,672 - INFO - 393 : RL Stock data saved
+2024-10-01 08:07:16,865 - INFO - 394 : RJF Stock data saved
+2024-10-01 08:07:17,147 - INFO - 395 : RTX Stock data saved
+2024-10-01 08:07:17,338 - INFO - 396 : O Stock data saved
+2024-10-01 08:07:17,528 - INFO - 397 : REG Stock data saved
+2024-10-01 08:07:17,692 - INFO - 398 : REGN Stock data saved
+2024-10-01 08:07:17,897 - INFO - 399 : RF Stock data saved
+2024-10-01 08:07:18,073 - INFO - 400 : RSG Stock data saved
+2024-10-01 08:07:18,238 - INFO - 401 : RMD Stock data saved
+2024-10-01 08:07:18,454 - INFO - 402 : RVTY Stock data saved
+2024-10-01 08:07:18,672 - INFO - 403 : ROK Stock data saved
+2024-10-01 08:07:18,867 - INFO - 404 : ROL Stock data saved
+2024-10-01 08:07:19,065 - INFO - 405 : ROP Stock data saved
+2024-10-01 08:07:19,279 - INFO - 406 : ROST Stock data saved
+2024-10-01 08:07:19,474 - INFO - 407 : RCL Stock data saved
+2024-10-01 08:07:19,672 - INFO - 408 : SPGI Stock data saved
+2024-10-01 08:07:19,828 - INFO - 409 : CRM Stock data saved
+2024-10-01 08:07:20,005 - INFO - 410 : SBAC Stock data saved
+2024-10-01 08:07:20,219 - INFO - 411 : SLB Stock data saved
+2024-10-01 08:07:20,402 - INFO - 412 : STX Stock data saved
+2024-10-01 08:07:20,589 - INFO - 413 : SRE Stock data saved
+2024-10-01 08:07:20,750 - INFO - 414 : NOW Stock data saved
+2024-10-01 08:07:20,951 - INFO - 415 : SHW Stock data saved
+2024-10-01 08:07:21,150 - INFO - 416 : SPG Stock data saved
+2024-10-01 08:07:21,325 - INFO - 417 : SWKS Stock data saved
+2024-10-01 08:07:21,518 - INFO - 418 : SJM Stock data saved
+2024-10-01 08:07:21,675 - INFO - 419 : SW Stock data saved
+2024-10-01 08:07:21,895 - INFO - 420 : SNA Stock data saved
+2024-10-01 08:07:22,054 - INFO - 421 : SOLV Stock data saved
+2024-10-01 08:07:22,278 - INFO - 422 : SO Stock data saved
+2024-10-01 08:07:22,483 - INFO - 423 : LUV Stock data saved
+2024-10-01 08:07:22,679 - INFO - 424 : SWK Stock data saved
+2024-10-01 08:07:22,865 - INFO - 425 : SBUX Stock data saved
+2024-10-01 08:07:23,069 - INFO - 426 : STT Stock data saved
+2024-10-01 08:07:23,254 - INFO - 427 : STLD Stock data saved
+2024-10-01 08:07:23,434 - INFO - 428 : STE Stock data saved
+2024-10-01 08:07:23,631 - INFO - 429 : SYK Stock data saved
+2024-10-01 08:07:23,786 - INFO - 430 : SMCI Stock data saved
+2024-10-01 08:07:23,953 - INFO - 431 : SYF Stock data saved
+2024-10-01 08:07:24,118 - INFO - 432 : SNPS Stock data saved
+2024-10-01 08:07:24,354 - INFO - 433 : SYY Stock data saved
+2024-10-01 08:07:24,522 - INFO - 434 : TMUS Stock data saved
+2024-10-01 08:07:24,718 - INFO - 435 : TROW Stock data saved
+2024-10-01 08:07:24,875 - INFO - 436 : TTWO Stock data saved
+2024-10-01 08:07:25,060 - INFO - 437 : TPR Stock data saved
+2024-10-01 08:07:25,233 - INFO - 438 : TRGP Stock data saved
+2024-10-01 08:07:25,450 - INFO - 439 : TGT Stock data saved
+2024-10-01 08:07:25,625 - INFO - 440 : TEL Stock data saved
+2024-10-01 08:07:25,782 - INFO - 441 : TDY Stock data saved
+2024-10-01 08:07:25,974 - INFO - 442 : TFX Stock data saved
+2024-10-01 08:07:26,138 - INFO - 443 : TER Stock data saved
+2024-10-01 08:07:26,299 - INFO - 444 : TSLA Stock data saved
+2024-10-01 08:07:26,536 - INFO - 445 : TXN Stock data saved
+2024-10-01 08:07:26,744 - INFO - 446 : TXT Stock data saved
+2024-10-01 08:07:26,925 - INFO - 447 : TMO Stock data saved
+2024-10-01 08:07:27,126 - INFO - 448 : TJX Stock data saved
+2024-10-01 08:07:27,303 - INFO - 449 : TSCO Stock data saved
+2024-10-01 08:07:27,519 - INFO - 450 : TT Stock data saved
+2024-10-01 08:07:27,714 - INFO - 451 : TDG Stock data saved
+2024-10-01 08:07:27,930 - INFO - 452 : TRV Stock data saved
+2024-10-01 08:07:28,088 - INFO - 453 : TRMB Stock data saved
+2024-10-01 08:07:28,285 - INFO - 454 : TFC Stock data saved
+2024-10-01 08:07:28,445 - INFO - 455 : TYL Stock data saved
+2024-10-01 08:07:28,646 - INFO - 456 : TSN Stock data saved
+2024-10-01 08:07:28,846 - INFO - 457 : USB Stock data saved
+2024-10-01 08:07:29,009 - INFO - 458 : UBER Stock data saved
+2024-10-01 08:07:29,199 - INFO - 459 : UDR Stock data saved
+2024-10-01 08:07:29,364 - INFO - 460 : ULTA Stock data saved
+2024-10-01 08:07:29,568 - INFO - 461 : UNP Stock data saved
+2024-10-01 08:07:29,732 - INFO - 462 : UAL Stock data saved
+2024-10-01 08:07:29,926 - INFO - 463 : UPS Stock data saved
+2024-10-01 08:07:30,082 - INFO - 464 : URI Stock data saved
+2024-10-01 08:07:30,278 - INFO - 465 : UNH Stock data saved
+2024-10-01 08:07:30,468 - INFO - 466 : UHS Stock data saved
+2024-10-01 08:07:30,686 - INFO - 467 : VLO Stock data saved
+2024-10-01 08:07:30,885 - INFO - 468 : VTR Stock data saved
+2024-10-01 08:07:31,041 - INFO - 469 : VLTO Stock data saved
+2024-10-01 08:07:31,196 - INFO - 470 : VRSN Stock data saved
+2024-10-01 08:07:31,370 - INFO - 471 : VRSK Stock data saved
+2024-10-01 08:07:31,576 - INFO - 472 : VZ Stock data saved
+2024-10-01 08:07:31,732 - INFO - 473 : VRTX Stock data saved
+2024-10-01 08:07:31,938 - INFO - 474 : VTRS Stock data saved
+2024-10-01 08:07:32,110 - INFO - 475 : VICI Stock data saved
+2024-10-01 08:07:32,291 - INFO - 476 : V Stock data saved
+2024-10-01 08:07:32,453 - INFO - 477 : VST Stock data saved
+2024-10-01 08:07:32,653 - INFO - 478 : VMC Stock data saved
+2024-10-01 08:07:32,865 - INFO - 479 : WRB Stock data saved
+2024-10-01 08:07:33,069 - INFO - 480 : GWW Stock data saved
+2024-10-01 08:07:33,265 - INFO - 481 : WAB Stock data saved
+2024-10-01 08:07:33,461 - INFO - 482 : WBA Stock data saved
+2024-10-01 08:07:33,677 - INFO - 483 : WMT Stock data saved
+2024-10-01 08:07:33,900 - INFO - 484 : DIS Stock data saved
+2024-10-01 08:07:34,058 - INFO - 485 : WBD Stock data saved
+2024-10-01 08:07:34,241 - INFO - 486 : WM Stock data saved
+2024-10-01 08:07:34,400 - INFO - 487 : WAT Stock data saved
+2024-10-01 08:07:34,601 - INFO - 488 : WEC Stock data saved
+2024-10-01 08:07:34,834 - INFO - 489 : WFC Stock data saved
+2024-10-01 08:07:35,032 - INFO - 490 : WELL Stock data saved
+2024-10-01 08:07:35,240 - INFO - 491 : WST Stock data saved
+2024-10-01 08:07:35,407 - INFO - 492 : WDC Stock data saved
+2024-10-01 08:07:35,614 - INFO - 493 : WY Stock data saved
+2024-10-01 08:07:35,837 - INFO - 494 : WMB Stock data saved
+2024-10-01 08:07:36,036 - INFO - 495 : WTW Stock data saved
+2024-10-01 08:07:36,210 - INFO - 496 : WYNN Stock data saved
+2024-10-01 08:07:36,415 - INFO - 497 : XEL Stock data saved
+2024-10-01 08:07:36,651 - INFO - 498 : XYL Stock data saved
+2024-10-01 08:07:36,833 - INFO - 499 : YUM Stock data saved
+2024-10-01 08:07:36,988 - INFO - 500 : ZBRA Stock data saved
+2024-10-01 08:07:37,151 - INFO - 501 : ZBH Stock data saved
+2024-10-01 08:07:37,325 - INFO - 502 : ZTS Stock data saved
+2024-10-01 08:07:37,325 - INFO - Stock price collection completed
+2024-10-01 08:47:43,778 - INFO - Shutting down market data collector
+2024-10-01 08:47:56,596 - INFO - Database tables created or verified.
+2024-10-01 08:47:56,597 - INFO - Starting market data collector
+2024-10-01 08:47:56,597 - INFO - Jobs scheduled at 22:00 and 08:48
+2024-10-01 08:48:00,750 - INFO - Current date: 2024-09-30 19:48:00.600908-04:00, Weekday: 0, Hour: 19
+2024-10-01 08:48:00,750 - INFO - Market status: AFTER_OPEN
+2024-10-01 08:48:00,750 - INFO - Collecting stock prices at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:00,754 - INFO - Number of symbols retrieved: 503
+2024-10-01 08:48:01,624 - INFO - 0 : MMM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:01,858 - INFO - 1 : AOS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:02,095 - INFO - 2 : ABT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:02,290 - INFO - 3 : ABBV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:02,492 - INFO - 4 : ACN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:02,686 - INFO - 5 : ADBE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:02,870 - INFO - 6 : AMD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:03,085 - INFO - 7 : AES Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:03,319 - INFO - 8 : AFL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:03,527 - INFO - 9 : A Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:03,756 - INFO - 10 : APD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:03,941 - INFO - 11 : ABNB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:04,124 - INFO - 12 : AKAM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:04,348 - INFO - 13 : ALB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:04,551 - INFO - 14 : ARE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:04,723 - INFO - 15 : ALGN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:04,909 - INFO - 16 : ALLE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:05,133 - INFO - 17 : LNT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:05,346 - INFO - 18 : ALL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:05,522 - INFO - 19 : GOOGL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:05,713 - INFO - 20 : GOOG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:06,016 - INFO - 21 : MO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:06,291 - INFO - 22 : AMZN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:06,491 - INFO - 23 : AMCR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:06,708 - INFO - 24 : AEE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:06,977 - INFO - 25 : AEP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:07,264 - INFO - 26 : AXP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:07,494 - INFO - 27 : AIG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:07,708 - INFO - 28 : AMT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:07,904 - INFO - 29 : AWK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:08,101 - INFO - 30 : AMP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:08,306 - INFO - 31 : AME Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:08,490 - INFO - 32 : AMGN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:08,694 - INFO - 33 : APH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:08,899 - INFO - 34 : ADI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:09,081 - INFO - 35 : ANSS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:09,308 - INFO - 36 : AON Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:09,542 - INFO - 37 : APA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:09,763 - INFO - 38 : AAPL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:09,959 - INFO - 39 : AMAT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:10,140 - INFO - 40 : APTV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:10,316 - INFO - 41 : ACGL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:10,550 - INFO - 42 : ADM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:10,725 - INFO - 43 : ANET Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:10,965 - INFO - 44 : AJG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:11,173 - INFO - 45 : AIZ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:11,380 - INFO - 46 : T Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:11,584 - INFO - 47 : ATO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:11,770 - INFO - 48 : ADSK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:11,999 - INFO - 49 : ADP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:12,179 - INFO - 50 : AZO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:12,384 - INFO - 51 : AVB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:12,612 - INFO - 52 : AVY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:12,792 - INFO - 53 : AXON Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:13,021 - INFO - 54 : BKR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:13,227 - INFO - 55 : BALL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:13,462 - INFO - 56 : BAC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:13,665 - INFO - 57 : BK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:13,892 - INFO - 58 : BBWI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:14,119 - INFO - 59 : BAX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:14,365 - INFO - 60 : BDX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:14,539 - INFO - 61 : BRK-B Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:14,746 - INFO - 62 : BBY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:14,946 - INFO - 63 : TECH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:15,121 - INFO - 64 : BIIB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:15,321 - INFO - 65 : BLK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:15,515 - INFO - 66 : BX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:15,763 - INFO - 67 : BA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:15,956 - INFO - 68 : BKNG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:16,180 - INFO - 69 : BWA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:16,365 - INFO - 70 : BSX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:16,610 - INFO - 71 : BMY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:16,802 - INFO - 72 : AVGO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:17,012 - INFO - 73 : BR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:17,240 - INFO - 74 : BRO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:17,455 - INFO - 75 : BF-B Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:17,636 - INFO - 76 : BLDR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:17,839 - INFO - 77 : BG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:18,040 - INFO - 78 : BXP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:18,253 - INFO - 79 : CHRW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:18,428 - INFO - 80 : CDNS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:18,611 - INFO - 81 : CZR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:18,850 - INFO - 82 : CPT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:19,107 - INFO - 83 : CPB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:19,330 - INFO - 84 : COF Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:19,549 - INFO - 85 : CAH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:19,730 - INFO - 86 : KMX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:19,937 - INFO - 87 : CCL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:20,122 - INFO - 88 : CARR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:20,295 - INFO - 89 : CTLT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:20,540 - INFO - 90 : CAT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:20,724 - INFO - 91 : CBOE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:20,901 - INFO - 92 : CBRE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:21,090 - INFO - 93 : CDW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:21,297 - INFO - 94 : CE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:21,501 - INFO - 95 : COR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:21,677 - INFO - 96 : CNC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:21,949 - INFO - 97 : CNP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:22,152 - INFO - 98 : CF Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:22,340 - INFO - 99 : CRL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:22,557 - INFO - 100 : SCHW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:22,740 - INFO - 101 : CHTR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:23,004 - INFO - 102 : CVX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:23,181 - INFO - 103 : CMG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:23,393 - INFO - 104 : CB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:23,617 - INFO - 105 : CHD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:23,852 - INFO - 106 : CI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:24,079 - INFO - 107 : CINF Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:24,298 - INFO - 108 : CTAS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:24,493 - INFO - 109 : CSCO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:24,719 - INFO - 110 : C Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:24,910 - INFO - 111 : CFG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:25,150 - INFO - 112 : CLX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:25,358 - INFO - 113 : CME Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:25,604 - INFO - 114 : CMS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:25,873 - INFO - 115 : KO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:26,060 - INFO - 116 : CTSH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:26,308 - INFO - 117 : CL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:26,531 - INFO - 118 : CMCSA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:26,756 - INFO - 119 : CAG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:26,988 - INFO - 120 : COP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:27,259 - INFO - 121 : ED Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:27,458 - INFO - 122 : STZ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:27,665 - INFO - 123 : CEG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:27,887 - INFO - 124 : COO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:28,061 - INFO - 125 : CPRT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:28,309 - INFO - 126 : GLW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:28,494 - INFO - 127 : CPAY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:28,677 - INFO - 128 : CTVA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:28,859 - INFO - 129 : CSGP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:29,060 - INFO - 130 : COST Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:29,260 - INFO - 131 : CTRA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:29,439 - INFO - 132 : CRWD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:29,621 - INFO - 133 : CCI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:29,834 - INFO - 134 : CSX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:30,093 - INFO - 135 : CMI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:30,316 - INFO - 136 : CVS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:30,521 - INFO - 137 : DHR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:30,734 - INFO - 138 : DRI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:30,920 - INFO - 139 : DVA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:31,096 - INFO - 140 : DAY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:31,275 - INFO - 141 : DECK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:31,524 - INFO - 142 : DE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:31,710 - INFO - 143 : DELL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:31,899 - INFO - 144 : DAL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:32,124 - INFO - 145 : DVN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:32,332 - INFO - 146 : DXCM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:32,519 - INFO - 147 : FANG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:32,708 - INFO - 148 : DLR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:32,902 - INFO - 149 : DFS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:33,085 - INFO - 150 : DG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:33,258 - INFO - 151 : DLTR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:33,590 - INFO - 152 : D Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:33,821 - INFO - 153 : DPZ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:34,054 - INFO - 154 : DOV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:34,238 - INFO - 155 : DOW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:34,436 - INFO - 156 : DHI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:34,711 - INFO - 157 : DTE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:34,961 - INFO - 158 : DUK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:35,197 - INFO - 159 : DD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:35,408 - INFO - 160 : EMN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:35,627 - INFO - 161 : ETN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:35,802 - INFO - 162 : EBAY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:36,044 - INFO - 163 : ECL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:36,279 - INFO - 164 : EIX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:36,454 - INFO - 165 : EW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:36,631 - INFO - 166 : EA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:36,826 - INFO - 167 : ELV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:37,073 - INFO - 168 : EMR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:37,246 - INFO - 169 : ENPH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:37,582 - INFO - 170 : ETR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:37,811 - INFO - 171 : EOG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:37,992 - INFO - 172 : EPAM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:38,242 - INFO - 173 : EQT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:38,461 - INFO - 174 : EFX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:38,654 - INFO - 175 : EQIX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:38,981 - INFO - 176 : EQR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:39,210 - INFO - 177 : ERIE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:39,430 - INFO - 178 : ESS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:39,635 - INFO - 179 : EL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:39,832 - INFO - 180 : EG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:40,066 - INFO - 181 : EVRG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:40,282 - INFO - 182 : ES Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:40,538 - INFO - 183 : EXC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:40,727 - INFO - 184 : EXPE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:40,945 - INFO - 185 : EXPD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:41,135 - INFO - 186 : EXR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:41,398 - INFO - 187 : XOM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:41,574 - INFO - 188 : FFIV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:41,797 - INFO - 189 : FDS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:41,995 - INFO - 190 : FICO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:42,228 - INFO - 191 : FAST Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:42,438 - INFO - 192 : FRT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:42,639 - INFO - 193 : FDX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:42,860 - INFO - 194 : FIS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:43,094 - INFO - 195 : FITB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:43,273 - INFO - 196 : FSLR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:43,501 - INFO - 197 : FE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:43,675 - INFO - 198 : FI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:43,913 - INFO - 199 : FMC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:44,168 - INFO - 200 : F Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:44,345 - INFO - 201 : FTNT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:44,527 - INFO - 202 : FTV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:44,708 - INFO - 203 : FOXA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:44,893 - INFO - 204 : FOX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:45,108 - INFO - 205 : BEN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:45,313 - INFO - 206 : FCX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:45,511 - INFO - 207 : GRMN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:45,696 - INFO - 208 : IT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:45,959 - INFO - 209 : GE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:46,130 - INFO - 210 : GEHC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:46,305 - INFO - 211 : GEV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:46,502 - INFO - 212 : GEN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:46,681 - INFO - 213 : GNRC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:46,941 - INFO - 214 : GD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:47,185 - INFO - 215 : GIS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:47,370 - INFO - 216 : GM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:47,592 - INFO - 217 : GPC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:47,773 - INFO - 218 : GILD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:47,969 - INFO - 219 : GPN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:48,188 - INFO - 220 : GL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:48,365 - INFO - 221 : GDDY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:48,570 - INFO - 222 : GS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:48,814 - INFO - 223 : HAL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:49,031 - INFO - 224 : HIG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:49,239 - INFO - 225 : HAS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:49,429 - INFO - 226 : HCA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:49,650 - INFO - 227 : DOC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:49,827 - INFO - 228 : HSIC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:50,058 - INFO - 229 : HSY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:50,290 - INFO - 230 : HES Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:50,475 - INFO - 231 : HPE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:50,659 - INFO - 232 : HLT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:50,831 - INFO - 233 : HOLX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:51,040 - INFO - 234 : HD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:51,315 - INFO - 235 : HON Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:51,518 - INFO - 236 : HRL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:51,759 - INFO - 237 : HST Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:51,981 - INFO - 238 : HWM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:52,233 - INFO - 239 : HPQ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:52,462 - INFO - 240 : HUBB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:52,692 - INFO - 241 : HUM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:52,915 - INFO - 242 : HBAN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:53,100 - INFO - 243 : HII Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:53,362 - INFO - 244 : IBM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:53,583 - INFO - 245 : IEX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:53,758 - INFO - 246 : IDXX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:53,971 - INFO - 247 : ITW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:54,141 - INFO - 248 : INCY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:54,323 - INFO - 249 : IR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:54,500 - INFO - 250 : PODD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:54,713 - INFO - 251 : INTC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:54,902 - INFO - 252 : ICE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:55,141 - INFO - 253 : IFF Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:55,399 - INFO - 254 : IP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:55,636 - INFO - 255 : IPG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:55,833 - INFO - 256 : INTU Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:56,007 - INFO - 257 : ISRG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:56,229 - INFO - 258 : IVZ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:56,411 - INFO - 259 : INVH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:56,587 - INFO - 260 : IQV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:56,782 - INFO - 261 : IRM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:56,997 - INFO - 262 : JBHT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:57,195 - INFO - 263 : JBL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:57,416 - INFO - 264 : JKHY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:57,599 - INFO - 265 : J Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:57,856 - INFO - 266 : JNJ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:58,083 - INFO - 267 : JCI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:58,332 - INFO - 268 : JPM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:58,521 - INFO - 269 : JNPR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:58,755 - INFO - 270 : K Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:58,930 - INFO - 271 : KVUE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:59,120 - INFO - 272 : KDP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:59,345 - INFO - 273 : KEY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:59,521 - INFO - 274 : KEYS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:59,744 - INFO - 275 : KMB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:48:59,962 - INFO - 276 : KIM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:00,165 - INFO - 277 : KMI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:00,355 - INFO - 278 : KKR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:00,551 - INFO - 279 : KLAC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:00,740 - INFO - 280 : KHC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:00,991 - INFO - 281 : KR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:01,241 - INFO - 282 : LHX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:01,452 - INFO - 283 : LH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:01,639 - INFO - 284 : LRCX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:01,827 - INFO - 285 : LW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:02,023 - INFO - 286 : LVS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:02,211 - INFO - 287 : LDOS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:02,440 - INFO - 288 : LEN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:02,687 - INFO - 289 : LLY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:02,918 - INFO - 290 : LIN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:03,097 - INFO - 291 : LYV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:03,275 - INFO - 292 : LKQ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:03,501 - INFO - 293 : LMT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:03,731 - INFO - 294 : L Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:03,953 - INFO - 295 : LOW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:04,130 - INFO - 296 : LULU Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:04,318 - INFO - 297 : LYB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:04,526 - INFO - 298 : MTB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:04,760 - INFO - 299 : MRO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:04,946 - INFO - 300 : MPC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:05,132 - INFO - 301 : MKTX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:05,328 - INFO - 302 : MAR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:05,533 - INFO - 303 : MMC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:05,737 - INFO - 304 : MLM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:05,974 - INFO - 305 : MAS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:06,177 - INFO - 306 : MA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:06,366 - INFO - 307 : MTCH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:06,589 - INFO - 308 : MKC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:06,918 - INFO - 309 : MCD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:07,120 - INFO - 310 : MCK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:07,341 - INFO - 311 : MDT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:07,613 - INFO - 312 : MRK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:07,796 - INFO - 313 : META Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:08,001 - INFO - 314 : MET Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:08,176 - INFO - 315 : MTD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:08,376 - INFO - 316 : MGM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:08,577 - INFO - 317 : MCHP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:08,792 - INFO - 318 : MU Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:08,993 - INFO - 319 : MSFT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:09,221 - INFO - 320 : MAA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:09,399 - INFO - 321 : MRNA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:09,572 - INFO - 322 : MHK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:09,747 - INFO - 323 : MOH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:09,970 - INFO - 324 : TAP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:10,174 - INFO - 325 : MDLZ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:10,363 - INFO - 326 : MPWR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:10,539 - INFO - 327 : MNST Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:10,736 - INFO - 328 : MCO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:10,968 - INFO - 329 : MS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:11,179 - INFO - 330 : MOS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:11,424 - INFO - 331 : MSI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:11,612 - INFO - 332 : MSCI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:11,804 - INFO - 333 : NDAQ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:11,997 - INFO - 334 : NTAP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:12,174 - INFO - 335 : NFLX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:12,386 - INFO - 336 : NEM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:12,574 - INFO - 337 : NWSA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:12,760 - INFO - 338 : NWS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:13,000 - INFO - 339 : NEE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:13,216 - INFO - 340 : NKE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:13,448 - INFO - 341 : NI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:13,667 - INFO - 342 : NDSN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:13,899 - INFO - 343 : NSC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:14,109 - INFO - 344 : NTRS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:14,340 - INFO - 345 : NOC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:14,520 - INFO - 346 : NCLH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:14,737 - INFO - 347 : NRG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:14,957 - INFO - 348 : NUE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:15,142 - INFO - 349 : NVDA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:15,318 - INFO - 350 : NVR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:15,501 - INFO - 351 : NXPI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:15,681 - INFO - 352 : ORLY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:15,895 - INFO - 353 : OXY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:16,085 - INFO - 354 : ODFL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:16,312 - INFO - 355 : OMC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:16,502 - INFO - 356 : ON Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:16,731 - INFO - 357 : OKE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:16,918 - INFO - 358 : ORCL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:17,098 - INFO - 359 : OTIS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:17,311 - INFO - 360 : PCAR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:17,513 - INFO - 361 : PKG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:17,689 - INFO - 362 : PLTR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:17,867 - INFO - 363 : PANW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:18,054 - INFO - 364 : PARA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:18,286 - INFO - 365 : PH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:18,484 - INFO - 366 : PAYX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:18,660 - INFO - 367 : PAYC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:18,835 - INFO - 368 : PYPL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:19,045 - INFO - 369 : PNR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:19,296 - INFO - 370 : PEP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:19,550 - INFO - 371 : PFE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:19,795 - INFO - 372 : PCG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:19,993 - INFO - 373 : PM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:20,181 - INFO - 374 : PSX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:20,420 - INFO - 375 : PNW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:20,639 - INFO - 376 : PNC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:20,829 - INFO - 377 : POOL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:21,075 - INFO - 378 : PPG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:21,295 - INFO - 379 : PPL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:21,489 - INFO - 380 : PFG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:21,739 - INFO - 381 : PG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:21,946 - INFO - 382 : PGR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:22,151 - INFO - 383 : PLD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:22,346 - INFO - 384 : PRU Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:22,559 - INFO - 385 : PEG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:22,729 - INFO - 386 : PTC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:22,951 - INFO - 387 : PSA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:23,216 - INFO - 388 : PHM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:23,394 - INFO - 389 : QRVO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:23,581 - INFO - 390 : PWR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:23,783 - INFO - 391 : QCOM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:23,978 - INFO - 392 : DGX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:24,183 - INFO - 393 : RL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:24,426 - INFO - 394 : RJF Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:24,657 - INFO - 395 : RTX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:24,912 - INFO - 396 : O Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:25,124 - INFO - 397 : REG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:25,299 - INFO - 398 : REGN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:25,523 - INFO - 399 : RF Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:25,726 - INFO - 400 : RSG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:25,928 - INFO - 401 : RMD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:26,155 - INFO - 402 : RVTY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:26,382 - INFO - 403 : ROK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:26,595 - INFO - 404 : ROL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:26,805 - INFO - 405 : ROP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:27,017 - INFO - 406 : ROST Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:27,234 - INFO - 407 : RCL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:27,474 - INFO - 408 : SPGI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:27,652 - INFO - 409 : CRM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:27,839 - INFO - 410 : SBAC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:28,067 - INFO - 411 : SLB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:28,267 - INFO - 412 : STX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:28,474 - INFO - 413 : SRE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:28,656 - INFO - 414 : NOW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:28,874 - INFO - 415 : SHW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:29,082 - INFO - 416 : SPG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:29,277 - INFO - 417 : SWKS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:29,484 - INFO - 418 : SJM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:29,663 - INFO - 419 : SW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:29,883 - INFO - 420 : SNA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:30,060 - INFO - 421 : SOLV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:30,293 - INFO - 422 : SO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:30,530 - INFO - 423 : LUV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:30,761 - INFO - 424 : SWK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:30,949 - INFO - 425 : SBUX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:31,185 - INFO - 426 : STT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:31,384 - INFO - 427 : STLD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:31,590 - INFO - 428 : STE Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:31,793 - INFO - 429 : SYK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:31,974 - INFO - 430 : SMCI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:32,152 - INFO - 431 : SYF Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:32,326 - INFO - 432 : SNPS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:32,534 - INFO - 433 : SYY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:32,713 - INFO - 434 : TMUS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:32,915 - INFO - 435 : TROW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:33,087 - INFO - 436 : TTWO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:33,274 - INFO - 437 : TPR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:33,471 - INFO - 438 : TRGP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:33,695 - INFO - 439 : TGT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:33,893 - INFO - 440 : TEL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:34,067 - INFO - 441 : TDY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:34,280 - INFO - 442 : TFX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:34,470 - INFO - 443 : TER Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:34,645 - INFO - 444 : TSLA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:34,878 - INFO - 445 : TXN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:35,102 - INFO - 446 : TXT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:35,309 - INFO - 447 : TMO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:35,516 - INFO - 448 : TJX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:35,703 - INFO - 449 : TSCO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:35,932 - INFO - 450 : TT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:36,120 - INFO - 451 : TDG Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:36,338 - INFO - 452 : TRV Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:36,512 - INFO - 453 : TRMB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:36,760 - INFO - 454 : TFC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:36,944 - INFO - 455 : TYL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:37,177 - INFO - 456 : TSN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:37,403 - INFO - 457 : USB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:37,587 - INFO - 458 : UBER Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:37,811 - INFO - 459 : UDR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:37,982 - INFO - 460 : ULTA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:38,215 - INFO - 461 : UNP Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:38,402 - INFO - 462 : UAL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:38,605 - INFO - 463 : UPS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:38,791 - INFO - 464 : URI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:39,007 - INFO - 465 : UNH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:39,236 - INFO - 466 : UHS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:39,456 - INFO - 467 : VLO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:39,653 - INFO - 468 : VTR Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:39,835 - INFO - 469 : VLTO Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:40,006 - INFO - 470 : VRSN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:40,194 - INFO - 471 : VRSK Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:40,424 - INFO - 472 : VZ Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:40,598 - INFO - 473 : VRTX Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:40,797 - INFO - 474 : VTRS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:40,983 - INFO - 475 : VICI Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:41,186 - INFO - 476 : V Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:41,373 - INFO - 477 : VST Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:41,611 - INFO - 478 : VMC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:41,838 - INFO - 479 : WRB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:42,055 - INFO - 480 : GWW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:42,361 - INFO - 481 : WAB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:42,582 - INFO - 482 : WBA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:42,814 - INFO - 483 : WMT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:43,036 - INFO - 484 : DIS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:43,211 - INFO - 485 : WBD Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:43,413 - INFO - 486 : WM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:43,595 - INFO - 487 : WAT Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:43,814 - INFO - 488 : WEC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:44,065 - INFO - 489 : WFC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:44,308 - INFO - 490 : WELL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:44,535 - INFO - 491 : WST Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:44,715 - INFO - 492 : WDC Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:44,926 - INFO - 493 : WY Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:45,163 - INFO - 494 : WMB Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:45,364 - INFO - 495 : WTW Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:45,569 - INFO - 496 : WYNN Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:45,790 - INFO - 497 : XEL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:45,985 - INFO - 498 : XYL Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:46,184 - INFO - 499 : YUM Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:46,358 - INFO - 500 : ZBRA Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:46,550 - INFO - 501 : ZBH Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:46,736 - INFO - 502 : ZTS Stock data saved at 2024-09-30 19:48:00.600908-04:00
+2024-10-01 08:49:46,736 - INFO - Stock price collection completed
