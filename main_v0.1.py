@@ -8,6 +8,7 @@ from sqlalchemy import create_engine, Column, Integer, String, Float, Date, Tabl
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.pool import QueuePool
+from sqlalchemy.dialects.postgresql import insert
 
 import pytz
 from datetime import datetime, timedelta
@@ -67,7 +68,6 @@ class MarketDataCollector:
         self.setup_timezone()
         self.setup_database_connection()
 
-
     # 로그 생성
     def setup_logging(self) -> None:
         logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -115,9 +115,8 @@ class MarketDataCollector:
 
         # 주식 데이터를 위한 테이블 정의
         self.stock_data_table = Table('stock_data', self.metadata,
-            Column('id', Integer, primary_key=True),
-            Column('date', Date),
-            Column('symbol', String),
+            Column('date', Date, primary_key=True),
+            Column('symbol', String, primary_key=True),
             Column('name', String),
             Column('sector', String),
             Column('industry', String),
@@ -131,7 +130,8 @@ class MarketDataCollector:
             Column('adj_change', Float),
             Column('adj_amount', Float)
         )
-
+        # 필요 시에만 활성화. 테이블 삭제 후 재생성
+        # self.stock_data_table.drop(self.engine, checkfirst=True)
         # DB 생성
         self.metadata.create_all(self.engine)
         self.logger.info("Database tables created or verified.")
@@ -193,10 +193,7 @@ class MarketDataCollector:
         session = self.Session()
         try:
             session.execute(self.snp500_table.delete())
-            # 1안
-            # records = df_SnP_list[['symbol', 'name', 'sector', 'industry']].to_dict(orient='records')
-            # session.bulk_insert_mappings(self.snp500_table, records)
-            # 2안
+            
             for _, row in df_SnP_list.iterrows():
                 session.execute(self.snp500_table.insert().values(
                     symbol=row['symbol'],
@@ -230,9 +227,9 @@ class MarketDataCollector:
     # S&P 500 Data Daily Update
     def fetch_stock_data(self, symbol : str, now : datetime) -> Tuple[str, Optional[pd.DataFrame]]:
         try:
-            start_time = now - timedelta(days=30)
+            start_time = now - timedelta(days=0)
             end_time = now
-            tp = yf.download(symbol, start=start_time, end=end_time)
+            tp = yf.download(symbol, start=start_time, end=end_time, progress=False)
             col_map = {'Date':'date', 'Open':'open', 'High':'high', 'Low':'low', 'Close':'close', 'Adj Close':'adj_close', 'Volume':'volume'}
 
             # now = self.get_current_date()
@@ -289,7 +286,7 @@ class MarketDataCollector:
                 adj_change = (row['adj_close'] - row['open']) / row['open'] if row['open'] != 0 else 0
                 adj_amount = row['adj_close'] * row['volume']
 
-                session.execute(self.stock_data_table.insert().values(
+                insert_stmt = insert(self.stock_data_table).values(
                     date=row['date'],
                     symbol=symbol,
                     name=row_symbol.name,
@@ -304,10 +301,32 @@ class MarketDataCollector:
                     change=change,
                     adj_change=adj_change,
                     adj_amount=adj_amount
-                ))
+                )
+
+                update_dict = {
+                    'name': row_symbol.name,
+                    'sector': row_symbol.sector,
+                    'industry': row_symbol.industry,
+                    'open': row['open'],
+                    'high': row['high'],
+                    'low': row['low'],
+                    'close': row['close'],
+                    'adj_close': row['adj_close'],
+                    'volume': row['volume'],
+                    'change': change,
+                    'adj_change': adj_change,
+                    'adj_amount': adj_amount
+                }
+
+                upsert_stmt = insert_stmt.on_conflict_do_update(
+                index_elements=['date', 'symbol'],
+                    set_=update_dict
+                )
+
+                session.execute(upsert_stmt)
 
             session.commit()
-            self.logger.info(f"{index} : {symbol} Stock data saved at {now}")
+            self.logger.info(f"{index} : {symbol} Stock data saved at {now.strftime('%Y-%m-%d %H:%M:%S')}")
         except SQLAlchemyError as e:
             session.rollback()
             self.logger.error(f"Error saving stock data for {symbol}: {e}")
@@ -317,7 +336,7 @@ class MarketDataCollector:
 
     # S&P 500 Data Daily Load
     def collect_stock_prices(self, now : datetime) -> None:
-        self.logger.info(f"Collecting stock prices at {now}")
+        self.logger.info(f"Collecting stock prices at {now.strftime('%Y-%m-%d %H:%M:%S')}")
         symbols = self.get_snp500_symbols()
         self.logger.info(f"Number of symbols retrieved: {len(symbols)}")
         if not symbols:
@@ -368,6 +387,9 @@ class MarketDataCollector:
     def job(self) -> None:
         try:
             now = self.get_current_date()
+            print('#'*50)
+            print(now)
+            print('#'*50)
             status = self.check_market_status(now)
             self.logger.info(f"Market status: {status}")
             if status == "BEFORE_OPEN":
@@ -391,7 +413,7 @@ class MarketDataCollector:
         now = self.get_current_date()
         if now.dst():           # 서머타임이면, 정규장 한국 시간 오후 10시 30분 ~ 오전 5시 / 프리마켓 오후 5시 / 애프터마켓 오전 8시
             before_time = "22:00" #"22:00"
-            after_time = "08:48" # 05:30
+            after_time = "15:47" # 05:30
         else:                   # 서머타임 아니면, 정규장 한국 시간 오후 11시 30분 ~ 오전 6시 / 프리마켓 오후 6시 / 애프터마켓 오전 9시
             before_time = "23:00"
             after_time = "06:30"
