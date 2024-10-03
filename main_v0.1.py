@@ -146,7 +146,6 @@ class MarketDataCollector:
 
     # 장 상태 확인
     def check_market_status(self, now : datetime) -> str:
-        # now = self.get_current_date()
         us_holidays = holidays.US()
         self.logger.info(f"Current date: {now}, Weekday: {now.weekday()}, Hour: {now.hour}")
         if now.date() in us_holidays:
@@ -353,15 +352,16 @@ class MarketDataCollector:
 
     def collect_news(self):
         self.logger.info("Collecting news")
-        try:
-            webhook_url = self.config['webhook_url_perplexity']
-            data = {"stock_list": ['dummy']}  # TODO: data 전송으로 s&p 500 리스트 모두 전송하는게 맞을지 검토 필요
-            response = requests.post(webhook_url, json=data, timeout=10)
-            response.raise_for_status()
-            self.logger.info("Signal sent to Make.com successfully")
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"Error sending signal to Make.com: {e}")
-            raise
+
+        # try:
+        #     webhook_url = self.config['webhook_url_perplexity']
+        #     data = {"stock_list": ['dummy']}  # TODO: data 전송으로 s&p 500 리스트 모두 전송하는게 맞을지 검토 필요
+        #     response = requests.post(webhook_url, json=data, timeout=10)
+        #     response.raise_for_status()
+        #     self.logger.info("Signal sent to Make.com successfully")
+        # except requests.exceptions.RequestException as e:
+        #     self.logger.error(f"Error sending signal to Make.com: {e}")
+        #     raise
 
 
     def analyze_stock(self) -> List[str]:
@@ -387,9 +387,6 @@ class MarketDataCollector:
     def job(self) -> None:
         try:
             now = self.get_current_date()
-            print('#'*50)
-            print(now)
-            print('#'*50)
             status = self.check_market_status(now)
             self.logger.info(f"Market status: {status}")
             if status == "BEFORE_OPEN":
@@ -413,7 +410,7 @@ class MarketDataCollector:
         now = self.get_current_date()
         if now.dst():           # 서머타임이면, 정규장 한국 시간 오후 10시 30분 ~ 오전 5시 / 프리마켓 오후 5시 / 애프터마켓 오전 8시
             before_time = "22:00" #"22:00"
-            after_time = "15:47" # 05:30
+            after_time = "05:30" # 05:30
         else:                   # 서머타임 아니면, 정규장 한국 시간 오후 11시 30분 ~ 오전 6시 / 프리마켓 오후 6시 / 애프터마켓 오전 9시
             before_time = "23:00"
             after_time = "06:30"
@@ -478,3 +475,115 @@ class MarketDataCollector:
 if __name__ == "__main__":
     collector = MarketDataCollector('config.yaml')
     collector.run()
+
+'''
+import pandas as pd
+from sqlalchemy import create_engine, text
+
+# 데이터베이스 연결 정보
+db_config = {
+    'host': 'localhost',
+    'port': 5432,
+    'name': 'postgres',
+    'user': 'postgres',
+    'password': 'test1!'
+}
+
+# SQLAlchemy 엔진 생성
+engine = create_engine(f"postgresql://{db_config['user']}:{db_config['password']}@{db_config['host']}:{db_config['port']}/{db_config['name']}")
+
+# S&P 500 리스트 조회
+query = text("SELECT * FROM snp500_list")
+df = pd.read_sql(query, engine)
+
+# 결과 출력
+print(f"Total number of companies: {len(df)}")
+print(df.head())
+
+# 섹터별 기업 수 확인
+sector_counts = df['sector'].value_counts()
+print("\nCompanies by sector:")
+print(sector_counts)
+
+# 연결 종료
+engine.dispose()
+
+
+
+import pandas as pd
+from sqlalchemy import create_engine, text
+
+# 데이터베이스 연결 정보
+db_config = {
+    'host': 'localhost',
+    'port': 5432,
+    'name': 'postgres',
+    'user': 'postgres',
+    'password': 'test1!'
+}
+
+# SQLAlchemy 엔진 생성
+engine = create_engine(f"postgresql://{db_config['user']}:{db_config['password']}@{db_config['host']}:{db_config['port']}/{db_config['name']}")
+
+# S&P 500 리스트 조회
+query = text("SELECT * FROM stock_data")
+df = pd.read_sql(query, engine)
+
+# 결과 출력
+print(f"Total number of companies: {len(df)}")
+print(df.head())
+
+# 섹터별 기업 수 확인
+sector_counts = df['sector'].value_counts()
+print("\nCompanies by sector:")
+print(sector_counts)
+
+# 연결 종료
+engine.dispose()
+
+
+
+from datetime import datetime, timedelta
+import yfinance as yf
+import pytz
+symbol = 'AAPL'
+eastern = pytz.timezone('America/New_York')
+start_time = eastern.localize(datetime.strptime("2024-09-27 17:00:00", '%Y-%m-%d %H:%M:%S')) - timedelta(days=0)
+end_time = eastern.localize(datetime.strptime("2024-09-27 17:00:00", '%Y-%m-%d %H:%M:%S'))
+tp = yf.download(symbol, start=start_time, end=end_time, progress=False)
+tp
+
+
+
+
+import finnhub
+import pandas as pd
+from tqdm import tqdm
+import time
+
+finnhub_client = finnhub.Client(api_key=api_key)
+
+df_list = []
+for index, symbol in enumerate(df['symbol']):
+    if (index + 1) % 60 == 1:
+        t1 = time.time()
+    try:
+        if symbol == 'BRK-B':
+            symbol = 'BRK.B'
+        if symbol == 'BF-B':
+            symbol = 'BF.B'
+        news = finnhub_client.company_news(symbol, _from="2024-09-01", to="2024-10-03")
+        df_news = pd.DataFrame(news)
+        df_news['datetime'] = pd.to_datetime(df_news['datetime'], unit='s')
+        if len(df_news) == 0:
+            print(f"Error processing {symbol}: No Data")
+        df_list.append(df_news)
+    except Exception as e:
+        print(f"Error processing {symbol}: {str(e)}")
+    
+    print(f'진행현황 : {index + 1}, {round(index / len(df["symbol"]), 2)}', end= '\r', flush = True)
+    # Respect API rate limits (60 requests per minute)
+    if (index + 1) % 60 == 0:
+        t2 = time.time()
+        time.sleep(62 - (t2 - t1) % 60)
+'''
